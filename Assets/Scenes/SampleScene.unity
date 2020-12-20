@@ -130,8 +130,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 59896502}
-  - component: {fileID: 59896501}
   - component: {fileID: 59896500}
+  - component: {fileID: 59896501}
   m_Layer: 0
   m_Name: diespace (4)
   m_TagString: Untagged
@@ -174,7 +174,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 59896499}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aaf80afbfd08e541af90501c72cdb43, type: 3}
+  m_Script: {fileID: 11500000, guid: cb0cb0695e5c1534f9287943b1927676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   respa: {fileID: 1228794737}
@@ -228,10 +228,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8dfd99dc6b567104b879e7a25fd10a70, type: 3}
+  m_Script: {fileID: 11500000, guid: b832eda7f58e52e4bb9092c5504f9d00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 786964472}
+  xSpeed: 0.42
+  ySpeed: 0.42
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -298,8 +300,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 727961445}
-  - component: {fileID: 727961444}
   - component: {fileID: 727961443}
+  - component: {fileID: 727961444}
   m_Layer: 0
   m_Name: diespace (3)
   m_TagString: Untagged
@@ -342,7 +344,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 727961442}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aaf80afbfd08e541af90501c72cdb43, type: 3}
+  m_Script: {fileID: 11500000, guid: cb0cb0695e5c1534f9287943b1927676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   respa: {fileID: 1228794737}
@@ -444,7 +446,7 @@ GameObject:
   - component: {fileID: 786964477}
   - component: {fileID: 786964478}
   m_Layer: 0
-  m_Name: player
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -587,12 +589,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 786964472}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91b0b1955a2874d44b9c6e8d4f6d1954, type: 3}
+  m_Script: {fileID: 11500000, guid: 75f4190e12b9fcc46afaad35d8882fc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectAxis: 0
-  speed: 400
-  addForce: 10
+  speed: 150
+  addForce: 8
   lookAtCursor: 0
   leftButton: 97
   rightButton: 100
@@ -609,8 +611,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 930685033}
-  - component: {fileID: 930685034}
   - component: {fileID: 930685032}
+  - component: {fileID: 930685034}
   m_Layer: 0
   m_Name: diespace
   m_TagString: Untagged
@@ -667,7 +669,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 930685031}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aaf80afbfd08e541af90501c72cdb43, type: 3}
+  m_Script: {fileID: 11500000, guid: cb0cb0695e5c1534f9287943b1927676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   respa: {fileID: 1228794737}
@@ -680,8 +682,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1098597674}
-  - component: {fileID: 1098597673}
   - component: {fileID: 1098597672}
+  - component: {fileID: 1098597673}
   m_Layer: 0
   m_Name: diespace (2)
   m_TagString: Untagged
@@ -724,7 +726,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1098597671}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aaf80afbfd08e541af90501c72cdb43, type: 3}
+  m_Script: {fileID: 11500000, guid: cb0cb0695e5c1534f9287943b1927676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   respa: {fileID: 1228794737}
@@ -752,7 +754,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1228794738}
   m_Layer: 0
-  m_Name: respa
+  m_Name: Respawn
   m_TagString: Untagged
   m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -781,8 +783,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1301466585}
-  - component: {fileID: 1301466584}
   - component: {fileID: 1301466583}
+  - component: {fileID: 1301466584}
   m_Layer: 0
   m_Name: diespace (1)
   m_TagString: Untagged
@@ -825,7 +827,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1301466582}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aaf80afbfd08e541af90501c72cdb43, type: 3}
+  m_Script: {fileID: 11500000, guid: cb0cb0695e5c1534f9287943b1927676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   respa: {fileID: 1228794737}

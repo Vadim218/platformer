@@ -3,7 +3,7 @@ using System.Collections;
 
 [RequireComponent(typeof(Rigidbody2D))]
 
-public class playercontroller : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
 
 	public enum ProjectAxis { onlyX = 0, xAndY = 1 };
