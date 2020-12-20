@@ -57,11 +57,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Animgo.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
-    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
-    <Compile Include="Assets\Scripts\dead.cs" />
-    <Compile Include="Assets\Scripts\playercontroller.cs" />
-    <None Include="Assets\git.txt.txt" />
+    <Compile Include="Assets\Scripts\Dead.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <None Include="Assets\git.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Unity/platformer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

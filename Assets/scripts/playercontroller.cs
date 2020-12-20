@@ -1,11 +1,11 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 
-public class playercontroller : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-
 	public enum ProjectAxis { onlyX = 0, xAndY = 1 };
 	public ProjectAxis projectAxis = ProjectAxis.onlyX;
 	public float speed = 150;
