@@ -6,6 +6,9 @@ public class CameraMove : MonoBehaviour
 {
     [Header("Objects")]
     public GameObject player;
+    [Header("Values")]
+    public float xSpeed = 0.42f;
+    public float ySpeed = 0.42f;
 
     float x;
     float y;
@@ -14,8 +17,8 @@ public class CameraMove : MonoBehaviour
     
     void Update()
     {
-        x = Mathf.SmoothDamp(x, player.transform.position.x, ref xVel, 0.5f);
-        y = Mathf.SmoothDamp(y, player.transform.position.y, ref yVel, 0.5f);
+        x = Mathf.SmoothDamp(x, player.transform.position.x, ref xVel, xSpeed);
+        y = Mathf.SmoothDamp(y, player.transform.position.y, ref yVel, ySpeed);
         transform.position = new Vector3(x, y, -10f); 
     }
 }
