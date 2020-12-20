@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
     <Compile Include="Assets\Scripts\dead.cs" />
     <Compile Include="Assets\Scripts\playercontroller.cs" />
+    <None Include="Assets\git.txt.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Unity/platformer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
