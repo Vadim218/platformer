@@ -1,9 +1,0 @@
-Это чисто для удобства...
-
-CD C:\Unity\platformer
-CD тут укажешь свой путь
-
-git status
-git add
-git commit -m "..."
-git push / git pull
