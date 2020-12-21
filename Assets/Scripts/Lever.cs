@@ -18,7 +18,10 @@ public class Lever : MonoBehaviour
             anim.SetTrigger("Enable");
         else
             anim.SetTrigger("Disable");
-        //objectToBeActived.GetComponent<Active>().Active(isActive);
+
+        //Добавлять по if на каждый активируемый скрипт: мост лестница и т.д.
+        if (objectToBeActived.TryGetComponent(out StoneDoor com))
+            com.Active(isActive);
     }
 
     void Start()
