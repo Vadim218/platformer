@@ -4,10 +4,11 @@ using UnityEngine;
 
 public static class SettingsControl
 {
-    public static KeyCode up = KeyCode.W;
-    public static KeyCode down = KeyCode.S;
-    public static KeyCode left = KeyCode.A;
-    public static KeyCode right = KeyCode.D;
-    public static KeyCode jump = KeyCode.Space;
-    public static KeyCode active = KeyCode.E;
+    public static KeyCode up;
+    public static KeyCode down;
+    public static KeyCode right;
+    public static KeyCode left;
+    public static KeyCode jump;
+    public static KeyCode dash;
+    public static KeyCode active;
 }
