@@ -24,9 +24,58 @@ public class SettingsControlSave : MonoBehaviour
         }
     }
 
+    IEnumerator CC(string name)
+    {
+        Debug.Log(name);
+        while (true)
+        {
+            Debug.Log("while");
+            if (Input.anyKey)
+            {
+                if (key != KeyCode.Escape)
+                {
+                    yield return new WaitForSeconds(0.01f);
+                    switch (name)
+                    {
+                        case "up":
+                            C.up = key;
+                            break;
+                        case "down":
+                            C.down = key;
+                            break;
+                        case "right":
+                            C.right = key;
+                            break;
+                        case "left":
+                            C.left = key;
+                            break;
+                        case "jump":
+                            C.jump = key;
+                            break;
+                        case "dash":
+                            C.dash = key;
+                            break;
+                        case "active":
+                            C.active = key;
+                            break;
+                    }
+                    break;
+                }
+                else
+                    break;
+            }
+            yield return null;
+        }
+    }
+
+    public void ChangeControl(string name)
+    {
+        StartCoroutine("CC", name);
+    }
+
     public void Apply()
     {
-        C = JsonUtility.FromJson<Control>(File.ReadAllText(SavePath));
+        File.WriteAllText(SavePath, JsonUtility.ToJson(C));
         SettingsControl.up = C.up;
         SettingsControl.down = C.down;
         SettingsControl.right = C.right;
@@ -42,6 +91,7 @@ public class SettingsControlSave : MonoBehaviour
 
         if (!File.Exists(SavePath))
             File.WriteAllText(SavePath, JsonUtility.ToJson(C));
+        C = JsonUtility.FromJson<Control>(File.ReadAllText(SavePath));
         Apply();
     }
 
