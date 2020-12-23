@@ -12,7 +12,10 @@ public static class Alpha
         for (int i = 0; i < 255; i++)
         {
             A++;
-            Image.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, A / 255);
+            if (Image.GetComponent<Image>())
+                Image.GetComponent<Image>().color = new Color(1f, 1f, 1f, A / 255);
+            if (Image.GetComponent<SpriteRenderer>())
+                Image.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, A / 255);
             await Task.Delay(Delay);
         }
     }
@@ -23,7 +26,10 @@ public static class Alpha
         for (int i = 255; i > 0; i--)
         {
             A--;
-            Image.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, A / 255);
+            if (Image.GetComponent<Image>())
+                Image.GetComponent<Image>().color = new Color(1f, 1f, 1f, A / 255);
+            if (Image.GetComponent<SpriteRenderer>())
+                Image.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, A / 255);
             await Task.Delay(Delay);
         }
     }
