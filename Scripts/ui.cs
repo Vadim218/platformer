@@ -10,6 +10,27 @@ public class ui : MonoBehaviour
     public GameObject imege3;
     public GameObject imege4;
     public bool port;
+    public void ghg()
+    {
+        if (!port)
+        {
+            On(imege1, 1);
+            On(imege2, 1);
+            On(imege3, 1);
+            On(imege4, 1);
+            port = true;
+
+        }
+        else
+        {
+            Off(imege1, 1);
+            Off(imege2, 1);
+            Off(imege3, 1);
+            Off(imege4, 1);
+            port = false;
+        }
+        Debug.Log("forko");
+    }
 
     
 
@@ -28,24 +49,8 @@ public class ui : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            
-            if (!port)
-            {
-                On(imege1, 1);
-                On(imege2, 1);
-                On(imege3, 1);
-                On(imege4, 1);
-                port = true;
 
-            }
-            else 
-            {
-                Off(imege1, 1);
-                Off(imege2, 1);
-                Off(imege3, 1);
-                Off(imege4, 1);
-                port = false;
-            }
+            ghg();
 
         }
 
