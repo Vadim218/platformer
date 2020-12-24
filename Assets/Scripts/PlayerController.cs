@@ -10,12 +10,12 @@ public class PlayerController : MonoBehaviour
 	public ProjectAxis projectAxis = ProjectAxis.onlyX;
 	public float speed = 150;
 	public float addForce = 7;
-	public KeyCode leftButton = KeyCode.A;
-	public KeyCode rightButton = KeyCode.D;
-	public KeyCode upButton = KeyCode.W;
-	public KeyCode downButton = KeyCode.S;
-	public KeyCode addForceButton = KeyCode.Space;
 	public bool isFacingRight = true;
+	private KeyCode leftButton = SettingsControl.left;
+	private KeyCode rightButton = SettingsControl.right;
+	private KeyCode upButton = SettingsControl.up;
+	private KeyCode downButton = SettingsControl.down;
+	private KeyCode addForceButton = SettingsControl.jump;
 	private Vector3 direction;
 	private float vertical;
 	private float horizontal;
@@ -86,6 +86,12 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+    	leftButton = SettingsControl.left;
+		rightButton = SettingsControl.right;
+		upButton = SettingsControl.up;
+		downButton = SettingsControl.down;
+		addForceButton = SettingsControl.jump;
+
         body = GetComponent<Rigidbody2D>();
         body.fixedAngle = true;
 
