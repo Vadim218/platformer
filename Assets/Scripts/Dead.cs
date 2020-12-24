@@ -4,14 +4,9 @@ using UnityEngine;
 
 public class Dead : MonoBehaviour
 {
-    public GameObject respa;
-
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D col)
     {
-        if (collision.tag == "Player")
-        {
-            collision.transform.position = respa.transform.position;
-            Camera.main.GetComponent<CameraMove>().Dead();
-        }
+        if (col.tag == "Player")
+        	col.GetComponent<PlayerController>().Dead();
     }
 }

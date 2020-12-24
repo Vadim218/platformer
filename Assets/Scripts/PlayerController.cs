@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
-
 public class PlayerController : MonoBehaviour
 {
+    public GameObject respawn;
 	public enum ProjectAxis { onlyX = 0, xAndY = 1 };
 	public ProjectAxis projectAxis = ProjectAxis.onlyX;
 	public float speed = 150;
@@ -23,7 +23,13 @@ public class PlayerController : MonoBehaviour
 	private float rotationY;
 	private bool jump;
 
-	void OnCollisionStay2D(Collision2D coll)
+    public void Dead()
+    {
+        transform.position = respawn.transform.position;
+        Camera.main.GetComponent<CameraMove>().Dead();
+    }
+
+    void OnCollisionStay2D(Collision2D coll)
 	{
 		if (coll.transform.tag == "Ground")
 		{
