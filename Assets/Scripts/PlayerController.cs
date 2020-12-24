@@ -10,7 +10,6 @@ public class PlayerController : MonoBehaviour
 	public ProjectAxis projectAxis = ProjectAxis.onlyX;
 	public float speed = 150;
 	public float addForce = 7;
-	public bool lookAtCursor;
 	public KeyCode leftButton = KeyCode.A;
 	public KeyCode rightButton = KeyCode.D;
 	public KeyCode upButton = KeyCode.W;
@@ -23,19 +22,6 @@ public class PlayerController : MonoBehaviour
 	private Rigidbody2D body;
 	private float rotationY;
 	private bool jump;
-
-	void Start()
-	{
-		body = GetComponent<Rigidbody2D>();
-		body.fixedAngle = true;
-
-		if (projectAxis == ProjectAxis.xAndY)
-		{
-			body.gravityScale = 0;
-			body.drag = 10;
-			
-		}
-	}
 
 	void OnCollisionStay2D(Collision2D coll)
 	{
@@ -83,7 +69,7 @@ public class PlayerController : MonoBehaviour
 
 	void Flip()
 	{
-		if (projectAxis == ProjectAxis.onlyX)
+		if (projectAxis == ProjectAxis.onlyX && !UI.isPaused)
 		{
 			isFacingRight = !isFacingRight;
 			Vector3 theScale = transform.localScale;
@@ -92,16 +78,20 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	void Update()
-	{
-		if (lookAtCursor)
-		{
-			Vector3 lookPos = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.transform.position.z));
-			lookPos = lookPos - transform.position;
-			float angle = Mathf.Atan2(lookPos.y, lookPos.x) * Mathf.Rad2Deg;
-			transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-		}
+    void Start()
+    {
+        body = GetComponent<Rigidbody2D>();
+        body.fixedAngle = true;
 
+        if (projectAxis == ProjectAxis.xAndY)
+        {
+            body.gravityScale = 0;
+            body.drag = 10;
+        }
+    }
+
+    void Update()
+	{
 		if (Input.GetKey(upButton)) vertical = 1;
 		else if (Input.GetKey(downButton)) vertical = -1; else vertical = 0;
 
@@ -118,6 +108,9 @@ public class PlayerController : MonoBehaviour
 			direction = new Vector2(horizontal, vertical);
 		}
 
-		if (horizontal > 0 && !isFacingRight) Flip(); else if (horizontal < 0 && isFacingRight) Flip();
+		if (horizontal > 0 && !isFacingRight)
+            Flip();
+        else if (horizontal < 0 && isFacingRight)
+            Flip();
 	}
 }

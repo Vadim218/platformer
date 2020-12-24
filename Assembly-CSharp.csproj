@@ -67,6 +67,7 @@
     <Compile Include="Assets\Scripts\SettingsControl.cs" />
     <Compile Include="Assets\Scripts\SettingsControlSave.cs" />
     <Compile Include="Assets\Scripts\StoneDoor.cs" />
+    <Compile Include="Assets\Scripts\UI.cs" />
     <None Include="Assets\git.txt" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Unity/platformer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
