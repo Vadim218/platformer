@@ -5,7 +5,7 @@ using UnityEngine;
 public class StoneDoor : MonoBehaviour
 {
     [Header("Values")]
-    public bool isActive;
+    [SerializeField] bool isActive;
     Animator[] anim;
 
     public void Active(bool active)

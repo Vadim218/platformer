@@ -5,10 +5,9 @@ using UnityEngine;
 public class CameraMove : MonoBehaviour
 {
     [Header("Objects")]
-    public GameObject player;
-    [Header("Values")]
-    public float xSpeed = 0.42f;
-    public float ySpeed = 0.42f;
+    [SerializeField] GameObject player;
+    float xSpeed = 0.42f;
+    float ySpeed = 0.42f;
 
     float x;
     float y;

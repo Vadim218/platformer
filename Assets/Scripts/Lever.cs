@@ -8,7 +8,7 @@ public class Lever : MonoBehaviour
     public GameObject objectToBeActived;
     public GameObject selected;
     [Header("Values")]
-    public bool isActive;
+    [SerializeField] bool isActive;
     Animator anim;
 
     public void Active()
@@ -22,6 +22,8 @@ public class Lever : MonoBehaviour
         //Добавлять по if на каждый активируемый скрипт: мост лестница и т.д.
         if (objectToBeActived.GetComponent<StoneDoor>())
             objectToBeActived.GetComponent<StoneDoor>().Active(isActive);
+        if (objectToBeActived.GetComponent<StonePlatform>())
+            objectToBeActived.GetComponent<StonePlatform>().Active(isActive);
     }
 
     void Start()

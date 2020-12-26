@@ -22,13 +22,14 @@ public class ActiveZone : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col)
     {
-        switch (selectedNow.tag)
-        {
-            case "Lever":
-                Alpha.Off(selectedNow.GetComponent<Lever>().selected, 1);
-                selectedNow = selectedDefault;
-                break;
-        }
+        if(col.gameObject == selectedNow)
+            switch (selectedNow.tag)
+            {
+                case "Lever":
+                    Alpha.Off(selectedNow.GetComponent<Lever>().selected, 1);
+                    selectedNow = selectedDefault;
+                    break;
+            }
     }
 
     //Почему бы и не здесь...
