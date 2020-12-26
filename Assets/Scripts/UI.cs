@@ -25,6 +25,10 @@ public class UI : MonoBehaviour
             isPaused = !isPaused;
         }
     }
+
+    public void Exit(){
+        Application.Quit();
+    }
     
     void Update()
     {

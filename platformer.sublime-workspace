@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"apl",
+				"Application\tApplication"
+			],
+			[
 				"me",
 				"message2\tstring"
 			],
@@ -472,16 +476,18 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Unity/platformer/Assets",
-		"/C/Unity/platformer/Assets/Scripts"
+		"/C/Unity/platformer/Assets"
 	],
 	"file_history":
 	[
+		"/C/Unity/platformer/Assets/Scripts/UI.cs",
+		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsControl.cs",
+		"/C/Users/mr.hask/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/Default.sublime-keymap",
+		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsLanguage.cs",
+		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsControlSave.cs",
 		"/C/Unity/platformer/Assets/Scripts/ActiveZone.cs",
 		"/C/Unity/platformer/platformer.sublime-project",
 		"/C/Unity/platformer/Assets/Scripts/Dead.cs",
-		"/C/Unity/platformer/Assets/Scripts/UI.cs",
-		"/C/Users/mr.hask/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/Default.sublime-keymap",
 		"/C/Users/mr.hask/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/OmniSharpSublime.sublime-settings",
 		"/C/Unity/platformer/Assets/Scripts/Lever.cs",
 		"/C/Unity/platformer/platformer.sln",
@@ -601,14 +607,11 @@
 		"/C/Users/mr.hask/Desktop/Фантастическая Космическая Тюрьма/Тюрьма/Assets/Scripts/Button.cs",
 		"/C/Users/mr.hask/Desktop/Фантастическая Космическая Тюрьма/Космическая",
 		"/C/Users/mr.hask/Desktop/Фантастическая",
-		"/C/Users/mr.hask/Desktop/Html epta/html.html",
-		"/C/Users/mr.hask/Desktop/Html epta/cats.html",
-		"/C/Program Files (x86)/Steam/steamapps/common/Ruthless Conquest/Engine.dll",
-		"/C/Program Files (x86)/Steam/steamapps/common/Ruthless Conquest/RuthlessConquest.exe"
+		"/C/Users/mr.hask/Desktop/Html epta/html.html"
 	],
 	"find":
 	{
-		"height": 31.0
+		"height": 44.0
 	},
 	"find_in_files":
 	{
@@ -622,6 +625,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"Control"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -685,7 +689,7 @@
 	},
 	"output.variable_get":
 	{
-		"height": 0.0
+		"height": 151.0
 	},
 	"pinned_build_system": "",
 	"project": "platformer.sublime-project",
