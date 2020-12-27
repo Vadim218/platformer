@@ -11,7 +11,16 @@ public class StonePlatform : MonoBehaviour
     [SerializeField] float speed = .5f;
     [Header("Objects")]
     [SerializeField] GameObject platform;
+    [SerializeField] List<GameObject> toMove;
     float lenght;
+
+    public void AddToMove(GameObject obj){
+        toMove.Add(obj);
+    }
+
+    public void RemoveToMove(GameObject obj){
+        toMove.Remove(obj);
+    }
 
     public void Active(bool active)
     {
@@ -21,6 +30,7 @@ public class StonePlatform : MonoBehaviour
     void Start()
     {
         lenght = GetComponentInChildren<RepeatedObject>().Count + 1;
+        toMove.Add(platform);
     }
 
     void Update()
@@ -28,12 +38,13 @@ public class StonePlatform : MonoBehaviour
         if (isActive)
         {
             if (onStart)
-                platform.transform.Translate(speed * Time.deltaTime, 0, 0);
+                for(int i = 0; i < toMove.ToArray().Length; i++)
+                    toMove[i].transform.Translate(speed * Time.deltaTime, 0, 0);
             else
-                platform.transform.Translate(-speed * Time.deltaTime, 0, 0);
+                for(int i = 0; i < toMove.ToArray().Length; i++)
+                    toMove[i].transform.Translate(-speed * Time.deltaTime, 0, 0);
 
-            if (platform.transform.localPosition.x > lenght)
-            {
+            if (platform.transform.localPosition.x > lenght){
                 onStart = !onStart;
                 if (!isLoop)
                     isActive = !isActive;

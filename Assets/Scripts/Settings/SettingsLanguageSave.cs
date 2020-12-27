@@ -12,7 +12,7 @@ public class SettingsLanguageSave : MonoBehaviour
 
     public void ChangeLanguage(string language)
     {
-        L.language = language
+        L.language = language;
     }
 
     public void Apply()

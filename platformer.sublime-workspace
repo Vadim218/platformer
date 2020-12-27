@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"A",
+				"AddToMove(GameObject obj)\tvoid"
+			],
+			[
+				"StoneO",
+				"StonePlatform\tStonePlatform"
+			],
+			[
+				"Get",
+				"GetComponentInParent<T>()\tT"
+			],
+			[
+				"re",
+				"RequireComponent(Type requiredComponent)\tRequireComponent(Type requiredComponent)"
+			],
+			[
+				"Re",
+				"Remove(GameObject item)\tbool"
+			],
+			[
+				"get",
+				"GetComponent<T>()\tT"
+			],
+			[
 				"apl",
 				"Application\tApplication"
 			],
@@ -376,10 +400,6 @@
 				"ruby-base-container\tdisplay"
 			],
 			[
-				"re",
-				"required\tAttr"
-			],
-			[
 				"in",
 				"input\tTag"
 			],
@@ -476,15 +496,19 @@
 	},
 	"expanded_folders":
 	[
-		"/C/Unity/platformer/Assets"
+		"/C/Unity/platformer/Assets",
+		"/C/Unity/platformer/Assets/Scripts"
 	],
 	"file_history":
 	[
+		"/C/Unity/platformer/Assets/Scripts/StonePlatform.cs",
+		"/C/Unity/platformer/Assets/Scripts/StonePlatformTrigger.cs",
+		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsLanguageSave.cs",
+		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsControlSave.cs",
 		"/C/Unity/platformer/Assets/Scripts/UI.cs",
 		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsControl.cs",
 		"/C/Users/mr.hask/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/Default.sublime-keymap",
 		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsLanguage.cs",
-		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsControlSave.cs",
 		"/C/Unity/platformer/Assets/Scripts/ActiveZone.cs",
 		"/C/Unity/platformer/platformer.sublime-project",
 		"/C/Unity/platformer/Assets/Scripts/Dead.cs",
@@ -604,10 +628,7 @@
 		"/C/Users/mr.hask/Desktop/Cat`s Lobby/css/cats.css",
 		"/C/Users/mr.hask/AppData/Roaming/Sublime Text 3/Installed Packages/Unity Completions.sublime-package",
 		"/C/Users/mr.hask/Desktop/ФантастическаяКосмическаяТюрьма/Assets/Scripts/Dead.cs",
-		"/C/Users/mr.hask/Desktop/Фантастическая Космическая Тюрьма/Тюрьма/Assets/Scripts/Button.cs",
-		"/C/Users/mr.hask/Desktop/Фантастическая Космическая Тюрьма/Космическая",
-		"/C/Users/mr.hask/Desktop/Фантастическая",
-		"/C/Users/mr.hask/Desktop/Html epta/html.html"
+		"/C/Users/mr.hask/Desktop/Фантастическая Космическая Тюрьма/Тюрьма/Assets/Scripts/Button.cs"
 	],
 	"find":
 	{
