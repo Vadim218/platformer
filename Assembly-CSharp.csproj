@@ -71,6 +71,7 @@
      <Compile Include="Assets\Scripts\StoneDoor.cs" />
      <Compile Include="Assets\Scripts\StonePlatform.cs" />
      <Compile Include="Assets\Scripts\StonePlatformTrigger.cs" />
+     <Compile Include="Assets\Scripts\StoneTurret.cs" />
      <Compile Include="Assets\Scripts\UI.cs" />
      <None Include="Assets\git.txt" />
  <Reference Include="Unity.Timeline.Editor">
