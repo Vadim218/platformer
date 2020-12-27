@@ -34,6 +34,24 @@ public static class Alpha
         }
     }
 
+    public static async void On(GameObject image, int delay, bool destroyOnEnd)
+    {
+        On(image, delay);
+        for (int i = 255; i > 0; i--)
+            await Task.Delay(delay);
+        if(destroyOnEnd)
+            MonoBehaviour.Destroy(image);
+    }
+
+    public static async void Off(GameObject image, int delay, bool destroyOnEnd)
+    {
+        Off(image, delay);
+        for (int i = 255; i > 0; i--)
+            await Task.Delay(delay);
+        if(destroyOnEnd)
+            MonoBehaviour.Destroy(image);
+    }
+
     public static async void On(GameObject image, int delay, bool setActiveOnStart, bool setActiveOnEnd)
     {
         image.SetActive(setActiveOnStart);

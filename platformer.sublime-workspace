@@ -4,6 +4,74 @@
 		"selected_items":
 		[
 			[
+				"Get",
+				"GetComponent<T>()\tT"
+			],
+			[
+				"o",
+				"Off(GameObject image, int delay, bool setActiveOnStart, bool setActiveOnEnd)\tvoid"
+			],
+			[
+				"Collide",
+				"Collider2D\tCollider2D"
+			],
+			[
+				"ri",
+				"RigidbodyConstraints2D\tRigidbodyConstraints2D"
+			],
+			[
+				"f",
+				"FreezePosition\tRigidbodyConstraints2D"
+			],
+			[
+				"Rig",
+				"RigidbodyConstraints2D\tRigidbodyConstraints2D"
+			],
+			[
+				"StoneTu",
+				"StoneTurretArrow\tStoneTurretArrow"
+			],
+			[
+				"He",
+				"HeaderAttribute\tHeaderAttribute"
+			],
+			[
+				"Ve",
+				"Vector3()\tVector3()"
+			],
+			[
+				"fo",
+				"force\tVector2"
+			],
+			[
+				"vect",
+				"Vector3\tVector3"
+			],
+			[
+				"Rigidbo",
+				"Rigidbody2D()\tRigidbody2D()"
+			],
+			[
+				"Re",
+				"RequireComponent(Type requiredComponent)\tRequireComponent(Type requiredComponent)"
+			],
+			[
+				"ad",
+				"AddForce(Vector2 force)\tvoid"
+			],
+			[
+				"Add",
+				"AddForce(Vector2 force)\tvoid"
+			],
+			[
+				"Rigi",
+				"Rigidbody2D\tRigidbody2D"
+			],
+			[
+				"Rigid",
+				"Rigidbody2D\t[class]"
+			],
+			[
 				"is",
 				"isLoop\tbool"
 			],
@@ -44,16 +112,8 @@
 				"StonePlatform\tStonePlatform"
 			],
 			[
-				"Get",
-				"GetComponentInParent<T>()\tT"
-			],
-			[
 				"re",
 				"RequireComponent(Type requiredComponent)\tRequireComponent(Type requiredComponent)"
-			],
-			[
-				"Re",
-				"Remove(GameObject item)\tbool"
 			],
 			[
 				"get",
@@ -158,10 +218,6 @@
 			[
 				"buttonN",
 				"buttonNextDisabled"
-			],
-			[
-				"ad",
-				"addEventListener"
 			],
 			[
 				"max",
@@ -380,10 +436,6 @@
 				"log\tDebug.*(message)"
 			],
 			[
-				"fo",
-				"form\tTag"
-			],
-			[
 				"str",
 				"String"
 			],
@@ -462,14 +514,6 @@
 			[
 				"li",
 				"link\tTag"
-			],
-			[
-				"met",
-				"meta\tTag"
-			],
-			[
-				"h",
-				"h1\tTag"
 			]
 		]
 	},
@@ -517,8 +561,11 @@
 	],
 	"file_history":
 	[
-		"/C/Unity/platformer/Assets/Scripts/Lever.cs",
+		"/C/Unity/platformer/Assets/Scripts/StoneTurretArrow.cs",
 		"/C/Unity/platformer/Assets/Scripts/StoneTurret.cs",
+		"/C/Unity/platformer/Assets/Scripts/PlayerController.cs",
+		"/C/Unity/platformer/Assets/Scripts/Alpha.cs",
+		"/C/Unity/platformer/Assets/Scripts/Lever.cs",
 		"/C/Unity/platformer/Assets/Scripts/StoneDoor.cs",
 		"/C/Unity/platformer/Assets/Scripts/ActiveZone.cs",
 		"/C/Unity/platformer/Assets/Scripts/StonePlatformTrigger.cs",
@@ -538,7 +585,6 @@
 		"/C/Python/spam.py",
 		"/C/Python/shutdownpls.py",
 		"/C/Python/neironochka.py",
-		"/C/Unity/platformer/Assets/Scripts/Alpha.cs",
 		"/C/Игры/game saves/Mindustry                                        (sandbox)/my mods/JustMod/scripts/GenericSmelter/silicone-mixer.js",
 		"/C/Игры/game saves/Mindustry                                        (sandbox)/my mods/JustMod/scripts/GenericSmelter/cotton-wool-mixer.js",
 		"/C/Игры/game saves/Mindustry                                        (sandbox)/my mods/JustMod/mod.json",
@@ -642,9 +688,7 @@
 		"/C/Users/mr.hask/Desktop/Cat`s Lobby/css/registration.css",
 		"/C/Users/mr.hask/Desktop/asfdg.html",
 		"/C/Users/mr.hask/Desktop/Cat`s Lobby/cats.html",
-		"/C/Users/mr.hask/Desktop/Cat`s Lobby/css/index.css",
-		"/C/Users/mr.hask/Desktop/Cat`s Lobby/css/cats.css",
-		"/C/Users/mr.hask/AppData/Roaming/Sublime Text 3/Installed Packages/Unity Completions.sublime-package"
+		"/C/Users/mr.hask/Desktop/Cat`s Lobby/css/index.css"
 	],
 	"find":
 	{
@@ -662,6 +706,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"PojectAxis",
 			"Control"
 		],
 		"highlight": true,
@@ -687,7 +732,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 31.0
+		"height": 32.0
 	},
 	"input":
 	{
@@ -732,7 +777,7 @@
 	"project": "platformer.sublime-project",
 	"replace":
 	{
-		"height": 58.0
+		"height": 60.0
 	},
 	"save_all_on_build": true,
 	"select_file":

@@ -8,12 +8,15 @@ public class StoneTurret : MonoBehaviour
 	[Header("Values")]
 	[SerializeField] bool isActive;
 	[SerializeField] bool isLoop;
-    [SerializeField] [MinAttribute(1)] int delay = 1;
-	enum Rotation {Up, Down, Right, Left};
+    [SerializeField] [Min(1)] int delay = 1;
+	public enum Rotation {Up, Down, Right, Left};
 	[SerializeField] Rotation lookAt;
+    [Header("Objects")]
+    [SerializeField] GameObject arrow;
 
     void Shoot(){
-        Debug.Log("Shoot!");
+        GameObject arr = Instantiate(arrow, transform);
+        arr.GetComponent<StoneTurretArrow>().Shoot(lookAt);
     }
 
     async void ManyShoots(){
