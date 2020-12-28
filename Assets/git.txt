@@ -1,6 +1,0 @@
-CD C:\Unity\platformer
-
-git status
-git add -A
-git commit -m "..."
-git push
