@@ -38,11 +38,11 @@ public class StonePlatform : MonoBehaviour
         if (isActive)
         {
             if (onStart)
-                for(int i = 0; i < toMove.ToArray().Length; i++)
-                    toMove[i].transform.Translate(speed * Time.deltaTime, 0, 0);
+                foreach(GameObject toMove in toMove)
+                    toMove.transform.Translate(speed * Time.deltaTime, 0, 0);
             else
-                for(int i = 0; i < toMove.ToArray().Length; i++)
-                    toMove[i].transform.Translate(-speed * Time.deltaTime, 0, 0);
+                foreach(GameObject toMove in toMove)
+                    toMove.transform.Translate(-speed * Time.deltaTime, 0, 0);
 
             if (platform.transform.localPosition.x > lenght){
                 onStart = !onStart;
