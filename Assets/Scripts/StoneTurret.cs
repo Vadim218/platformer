@@ -15,8 +15,10 @@ public class StoneTurret : MonoBehaviour
     [SerializeField] GameObject arrow;
 
     void Shoot(){
-        GameObject arr = Instantiate(arrow, transform);
-        arr.GetComponent<StoneTurretArrow>().Shoot(lookAt);
+        if(isActive){
+            GameObject arr = Instantiate(arrow, transform);
+            arr.GetComponent<StoneTurretArrow>().Shoot(lookAt);
+        }
     }
 
     async void ManyShoots(){
