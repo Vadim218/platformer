@@ -26,6 +26,8 @@ public class Lever : MonoBehaviour
             objectToBeActived.GetComponent<StonePlatform>().Active(isActive);
         if (objectToBeActived.GetComponent<StoneTurret>())
             objectToBeActived.GetComponent<StoneTurret>().Active(isActive);
+        if (objectToBeActived.GetComponentInChildren<StoneAutoTurret>())
+            objectToBeActived.GetComponentInChildren<StoneAutoTurret>().Active(isActive);
     }
 
     void Start()

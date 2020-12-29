@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\ActiveZone.cs" />
      <Compile Include="Assets\Scripts\Alpha.cs" />
      <Compile Include="Assets\Scripts\Animgo.cs" />
+     <Compile Include="Assets\Scripts\Arrows.cs" />
      <Compile Include="Assets\Scripts\Button.cs" />
      <Compile Include="Assets\Scripts\CameraMove.cs" />
      <Compile Include="Assets\Scripts\Dead.cs" />
@@ -70,6 +71,7 @@
      <Compile Include="Assets\Scripts\Settings\SettingsControlSave.cs" />
      <Compile Include="Assets\Scripts\Settings\SettingsLanguage.cs" />
      <Compile Include="Assets\Scripts\Settings\SettingsLanguageSave.cs" />
+     <Compile Include="Assets\Scripts\StoneAutoTurret.cs" />
      <Compile Include="Assets\Scripts\StoneDoor.cs" />
      <Compile Include="Assets\Scripts\StonePlatform.cs" />
      <Compile Include="Assets\Scripts\StonePlatformTrigger.cs" />

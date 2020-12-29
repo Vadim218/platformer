@@ -13,11 +13,25 @@ public class StoneTurret : MonoBehaviour
 	[SerializeField] Rotation lookAt;
     [Header("Objects")]
     [SerializeField] GameObject arrow;
+    float shift = -0.088f;
 
     void Shoot(){
         if(isActive){
             GameObject arr = Instantiate(arrow, transform);
-            arr.GetComponent<StoneTurretArrow>().Shoot(lookAt);
+            switch (lookAt){
+                case Rotation.Up:
+                    arr.GetComponent<StoneTurretArrow>().Shoot(-90, shift);
+                    break;
+                case Rotation.Down:
+                    arr.GetComponent<StoneTurretArrow>().Shoot(90, shift);
+                    break;
+                case Rotation.Right:
+                    arr.GetComponent<StoneTurretArrow>().Shoot(180, shift);
+                    break;
+                case Rotation.Left:
+                    arr.GetComponent<StoneTurretArrow>().Shoot(0, shift);
+                    break;
+            }
         }
     }
 

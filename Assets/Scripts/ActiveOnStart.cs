@@ -9,6 +9,7 @@ public class ActiveOnStart : MonoBehaviour
     [SerializeField] GameObject[] StoneDoors;
     [SerializeField] GameObject[] StonePlatforms;
     [SerializeField] GameObject[] StoneTurrets;
+    [SerializeField] GameObject[] StoneAutoTurrets;
 
     IEnumerator Wait(){
         while(true){
@@ -21,6 +22,8 @@ public class ActiveOnStart : MonoBehaviour
                     obj.GetComponent<StonePlatform>().Active(true);
                 foreach(GameObject obj in StoneTurrets)
                     obj.GetComponent<StoneTurret>().Active(true);
+                foreach(GameObject obj in StoneAutoTurrets)
+                    obj.GetComponent<StoneAutoTurret>().Active(true);
                 break;
             }
             yield return null;
