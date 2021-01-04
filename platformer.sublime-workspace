@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"O",
+				"Off(GameObject image, int delay, bool destroyOnEnd)\tvoid"
+			],
+			[
+				"to",
+				"ToString()\tstring"
+			],
+			[
+				"Se",
+				"SetTrigger(string name)\tvoid"
+			],
+			[
+				"Anima",
+				"Animator\tAnimator"
+			],
+			[
+				"key",
+				"key\tKeyCode"
+			],
+			[
+				"Off",
+				"Off(GameObject image, int delay, bool destroyOnEnd)\tvoid"
+			],
+			[
+				"bu",
+				"buttonImgs\tGameObject[]"
+			],
+			[
+				"On",
+				"On(GameObject image, int delay)\tvoid"
+			],
+			[
+				"Stop",
+				"StopCoroutine(string methodName)\tvoid"
+			],
+			[
+				"GetKeyDow",
+				"GetKeyDown(KeyCode key)\tbool"
+			],
+			[
+				"Gey",
+				"GetKeyDown(string name)\tbool"
+			],
+			[
+				"Bu",
+				"Buttons\tKeyCode[]"
+			],
+			[
+				"in",
+				"Input()\tInput()"
+			],
+			[
+				"Key",
+				"KeyCode\tKeyCode"
+			],
+			[
 				"loo",
 				"lookAtTarget\tfloat"
 			],
@@ -320,10 +376,6 @@
 				"addClass\t.addClass()"
 			],
 			[
-				"bu",
-				"buttonNext"
-			],
-			[
 				"sli",
 				"slidesAmount"
 			],
@@ -382,10 +434,6 @@
 			[
 				"v",
 				"var"
-			],
-			[
-				"Bu",
-				"ButtonNext"
 			],
 			[
 				"Butt",
@@ -466,54 +514,6 @@
 			[
 				"borde",
 				"border\tproperty"
-			],
-			[
-				"butt",
-				"ButtonPrev"
-			],
-			[
-				"But",
-				"ButtonNext"
-			],
-			[
-				"fu",
-				"function"
-			],
-			[
-				"margi",
-				"margin\tproperty"
-			],
-			[
-				"widt",
-				"width\tproperty"
-			],
-			[
-				"st",
-				"style\tAttr"
-			],
-			[
-				"t",
-				"th\tTag"
-			],
-			[
-				"Pa",
-				"Password"
-			],
-			[
-				"box",
-				"box-shadow\tproperty"
-			],
-			[
-				"borderco",
-				"border-color\tproperty"
-			],
-			[
-				"rg",
-				"rgba()\tbackground-color"
-			],
-			[
-				"backgro",
-				"background-image\tproperty"
 			]
 		]
 	},
@@ -562,8 +562,13 @@
 	],
 	"file_history":
 	[
+		"/C/Unity/platformer/Assets/Scripts/Tutorial.cs",
+		"/C/Unity/platformer/Assets/Scripts/PlayerController.cs",
+		"/C/Unity/platformer/Assets/Scripts/Alpha.cs",
+		"/C/Игры/programm/Unity/Outside of Mind/Assets/Scripts/LanguageInterface.cs",
 		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsLanguage.cs",
 		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsControl.cs",
+		"/C/Unity/platformer/Assets/Scripts/ActiveZone.cs",
 		"/C/Unity/platformer/Assets/Scripts/Settings/Settings.cs",
 		"/C/Unity/platformer/Assets/Scripts/StoneAutoTurret.cs",
 		"/C/Unity/platformer/Assets/Scripts/StoneTurretArrow.cs",
@@ -574,10 +579,7 @@
 		"/C/Unity/platformer/Assets/Scripts/ActiveOnStart.cs",
 		"/C/Unity/platformer/Assets/Scripts/Button.cs",
 		"/C/Unity/platformer/Assets/Scripts/StonePlatform.cs",
-		"/C/Unity/platformer/Assets/Scripts/PlayerController.cs",
-		"/C/Unity/platformer/Assets/Scripts/Alpha.cs",
 		"/C/Unity/platformer/Assets/Scripts/StoneDoor.cs",
-		"/C/Unity/platformer/Assets/Scripts/ActiveZone.cs",
 		"/C/Unity/platformer/Assets/Scripts/StonePlatformTrigger.cs",
 		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsLanguageSave.cs",
 		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsControlSave.cs",
@@ -687,9 +689,7 @@
 		"/C/Музыка/My Music/Joe Dassin - Поет Джо Дассен (1980)/artist.png",
 		"/C/Музыка/My Music/Joe Dassin - Поет Джо Дассен (1980)/back.jpg",
 		"/C/Музыка/My Music/Finding Paradise/2. Finding Paradise - Title Theme (Short Version).mp3",
-		"/C/Музыка/My Music/Christopher Larkin/Hollow Knight/01. Hive Knight.flac",
-		"/C/Игры/programm/Funny/Выживание/выживание.sb2",
-		"/C/GOG Games/Little Nightmares/Atlas/Binaries/Win64/LittleNightmares.exe"
+		"/C/Музыка/My Music/Christopher Larkin/Hollow Knight/01. Hive Knight.flac"
 	],
 	"find":
 	{
