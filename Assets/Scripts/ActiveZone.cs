@@ -35,7 +35,7 @@ public class ActiveZone : MonoBehaviour
     //Почему бы и не здесь...
     void Update()
     {
-        if (Input.GetKeyDown(SettingsControl.active))
+        if (Input.GetKeyDown(Settings.active))
         {
             switch (selectedNow.tag)
             {

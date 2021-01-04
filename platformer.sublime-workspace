@@ -557,10 +557,14 @@
 	"expanded_folders":
 	[
 		"/C/Unity/platformer/Assets",
-		"/C/Unity/platformer/Assets/Scripts"
+		"/C/Unity/platformer/Assets/Scripts",
+		"/C/Unity/platformer/Assets/Scripts/Settings"
 	],
 	"file_history":
 	[
+		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsLanguage.cs",
+		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsControl.cs",
+		"/C/Unity/platformer/Assets/Scripts/Settings/Settings.cs",
 		"/C/Unity/platformer/Assets/Scripts/StoneAutoTurret.cs",
 		"/C/Unity/platformer/Assets/Scripts/StoneTurretArrow.cs",
 		"/C/Unity/platformer/Assets/Scripts/Arrows.cs",
@@ -578,9 +582,7 @@
 		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsLanguageSave.cs",
 		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsControlSave.cs",
 		"/C/Unity/platformer/Assets/Scripts/UI.cs",
-		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsControl.cs",
 		"/C/Users/mr.hask/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/Default.sublime-keymap",
-		"/C/Unity/platformer/Assets/Scripts/Settings/SettingsLanguage.cs",
 		"/C/Unity/platformer/platformer.sublime-project",
 		"/C/Unity/platformer/Assets/Scripts/Dead.cs",
 		"/C/Users/mr.hask/AppData/Roaming/Sublime Text 3/Packages/OmniSharp/OmniSharpSublime.sublime-settings",
@@ -687,8 +689,7 @@
 		"/C/Музыка/My Music/Finding Paradise/2. Finding Paradise - Title Theme (Short Version).mp3",
 		"/C/Музыка/My Music/Christopher Larkin/Hollow Knight/01. Hive Knight.flac",
 		"/C/Игры/programm/Funny/Выживание/выживание.sb2",
-		"/C/GOG Games/Little Nightmares/Atlas/Binaries/Win64/LittleNightmares.exe",
-		"/C/Users/mr.hask/Desktop/Cat`s Lobby/registration.html"
+		"/C/GOG Games/Little Nightmares/Atlas/Binaries/Win64/LittleNightmares.exe"
 	],
 	"find":
 	{

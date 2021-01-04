@@ -11,11 +11,11 @@ public class PlayerController : MonoBehaviour
 	public float speed = 150;
 	public float addForce = 7;
 	public bool isFacingRight = true;
-	private KeyCode leftButton = SettingsControl.left;
-	private KeyCode rightButton = SettingsControl.right;
-	private KeyCode upButton = SettingsControl.up;
-	private KeyCode downButton = SettingsControl.down;
-	private KeyCode addForceButton = SettingsControl.jump;
+	private KeyCode leftButton;
+	private KeyCode rightButton;
+	private KeyCode upButton;
+	private KeyCode downButton;
+	private KeyCode addForceButton;
 	private Vector3 direction;
 	private float vertical;
 	private float horizontal;
@@ -86,11 +86,11 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-    	leftButton = SettingsControl.left;
-		rightButton = SettingsControl.right;
-		upButton = SettingsControl.up;
-		downButton = SettingsControl.down;
-		addForceButton = SettingsControl.jump;
+    	leftButton = Settings.left;
+		rightButton = Settings.right;
+		upButton = Settings.up;
+		downButton = Settings.down;
+		addForceButton = Settings.jump;
 
         body = GetComponent<Rigidbody2D>();
         body.fixedAngle = true;
@@ -102,27 +102,41 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    // Страшно:
     void Update()
 	{
-		if (Input.GetKey(upButton)) vertical = 1;
-		else if (Input.GetKey(downButton)) vertical = -1; else vertical = 0;
+		if (Input.GetKey(upButton)) 
+			vertical = 1;
+		else 
+			if (Input.GetKey(downButton)) 
+				vertical = -1; 
+			else
+				vertical = 0;
 
-		if (Input.GetKey(leftButton)) horizontal = -1;
-		else if (Input.GetKey(rightButton)) horizontal = 1; else horizontal = 0;
+		if (Input.GetKey(leftButton)) 
+			horizontal = -1;
+		else 
+			if (Input.GetKey(rightButton)) 
+				horizontal = 1; 
+			else 
+				horizontal = 0;
 
 		if (projectAxis == ProjectAxis.onlyX)
-		{
 			direction = new Vector2(horizontal, 0);
-		}
 		else
 		{
-			if (Input.GetKeyDown(addForceButton)) speed += addForce; else if (Input.GetKeyUp(addForceButton)) speed -= addForce;
+			if (Input.GetKeyDown(addForceButton)) 
+				speed += addForce; 
+			else 
+				if (Input.GetKeyUp(addForceButton)) 
+					speed -= addForce;
 			direction = new Vector2(horizontal, vertical);
 		}
 
 		if (horizontal > 0 && !isFacingRight)
             Flip();
-        else if (horizontal < 0 && isFacingRight)
-            Flip();
+        else 
+        	if (horizontal < 0 && isFacingRight)
+            	Flip();
 	}
 }

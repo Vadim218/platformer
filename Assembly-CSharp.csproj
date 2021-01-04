@@ -66,17 +66,17 @@
      <Compile Include="Assets\Scripts\Lever.cs" />
      <Compile Include="Assets\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\RepeatedObject.cs" />
+     <Compile Include="Assets\Scripts\Settings\Settings.cs" />
      <Compile Include="Assets\Scripts\Settings\SettingsClear.cs" />
      <Compile Include="Assets\Scripts\Settings\SettingsControl.cs" />
-     <Compile Include="Assets\Scripts\Settings\SettingsControlSave.cs" />
      <Compile Include="Assets\Scripts\Settings\SettingsLanguage.cs" />
-     <Compile Include="Assets\Scripts\Settings\SettingsLanguageSave.cs" />
      <Compile Include="Assets\Scripts\StoneAutoTurret.cs" />
      <Compile Include="Assets\Scripts\StoneDoor.cs" />
      <Compile Include="Assets\Scripts\StonePlatform.cs" />
      <Compile Include="Assets\Scripts\StonePlatformTrigger.cs" />
      <Compile Include="Assets\Scripts\StoneTurret.cs" />
      <Compile Include="Assets\Scripts\StoneTurretArrow.cs" />
+     <Compile Include="Assets\Scripts\Tutorial.cs" />
      <Compile Include="Assets\Scripts\UI.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Unity/platformer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

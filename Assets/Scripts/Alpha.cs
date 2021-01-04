@@ -16,6 +16,10 @@ public static class Alpha
                 image.GetComponent<Image>().color = new Color(1f, 1f, 1f, A / 255);
             if (image.GetComponent<SpriteRenderer>())
                 image.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, A / 255);
+            if (image.GetComponent<Text>())
+                image.GetComponent<Text>().color = new Color(1f, 1f, 1f, A / 255);
+            if (image.GetComponent<TextMesh>())
+                image.GetComponent<TextMesh>().color = new Color(1f, 1f, 1f, A / 255);
             await Task.Delay(delay);
         }
     }
@@ -30,6 +34,10 @@ public static class Alpha
                 image.GetComponent<Image>().color = new Color(1f, 1f, 1f, A / 255);
             if (image.GetComponent<SpriteRenderer>())
                 image.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, A / 255);
+            if (image.GetComponent<Text>())
+                image.GetComponent<Text>().color = new Color(1f, 1f, 1f, A / 255);
+            if (image.GetComponent<TextMesh>())
+                image.GetComponent<TextMesh>().color = new Color(1f, 1f, 1f, A / 255);
             await Task.Delay(delay);
         }
     }
