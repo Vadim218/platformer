@@ -16,7 +16,6 @@ public class UI : MonoBehaviour
             for(int i = 0; i < image.Length; i++)
                 Alpha.Off(image[i], 1, true, false);
             isPaused = !isPaused;
-
         }
         else
         {
