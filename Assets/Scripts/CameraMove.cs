@@ -42,6 +42,12 @@ public class CameraMove : MonoBehaviour
         return false;
     }
 
+    void Start()
+    {
+        x = transform.position.x;
+        y = transform.position.y;
+    }
+
     void Update()
     {
         x = Mathf.SmoothDamp(x, player.transform.position.x, ref xVel, 0.5f);

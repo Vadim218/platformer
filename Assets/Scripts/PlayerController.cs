@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -78,20 +79,21 @@ public class PlayerController : MonoBehaviour
 		if (projectAxis == ProjectAxis.onlyX && !UI.isPaused)
 		{
 			isFacingRight = !isFacingRight;
-			Vector3 theScale = transform.localScale;
-			theScale.x *= -1;
-			transform.localScale = theScale;
+			GetComponent<SpriteRenderer>().flipX = isFacingRight;
 		}
 	}
 
-    void Start()
-    {
-    	leftButton = Settings.left;
+	async void Control(){
+		await Task.Delay(1);
+		leftButton = Settings.left;
 		rightButton = Settings.right;
 		upButton = Settings.up;
 		downButton = Settings.down;
 		addForceButton = Settings.jump;
+	}
 
+    void Start()
+    {
         body = GetComponent<Rigidbody2D>();
         body.fixedAngle = true;
 
@@ -100,6 +102,8 @@ public class PlayerController : MonoBehaviour
             body.gravityScale = 0;
             body.drag = 10;
         }
+
+        Control();
     }
 
     // Страшно:
