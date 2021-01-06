@@ -1,11 +1,10 @@
-﻿using System.IO;
+﻿#if UNITY_EDITOR
+using System.IO;
 using UnityEngine;
 using UnityEditor;
 
 public class SettingsClear : EditorWindow
 {
-    #if UNITY_EDITOR
-
     [MenuItem("Edit/MySettings/Clear All")]
     public static void ClearAll()
     {
@@ -35,6 +34,5 @@ public class SettingsClear : EditorWindow
         else
             Debug.LogError("The file does not exist.");
     }
-
-    #endif
 }
+#endif
