@@ -51,7 +51,6 @@ MonoBehaviour:
   - {fileID: 2849523198614653517}
   - {fileID: 2849523197642704440}
   - {fileID: 2849523198659484047}
-  isOn: 0
 --- !u!1 &2849523197642704440
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +512,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2849523198659484032}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2849523196872909934}
+        m_MethodName: Exit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2849523198730701798
 GameObject:
   m_ObjectHideFlags: 0

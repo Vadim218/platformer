@@ -6,6 +6,10 @@ using UnityEngine.UI;
 
 public static class Alpha
 {
+	public static Color ColorA(Color color, float Alpha255){
+		return new Color(color.r, color.g, color.b, Alpha255 / 255);
+	}
+
     public static async void On(GameObject image, int delay)
     {
         float A = 0;
@@ -13,13 +17,13 @@ public static class Alpha
         {
             A++;
             if (image.GetComponent<Image>())
-                image.GetComponent<Image>().color = new Color(1f, 1f, 1f, A / 255);
+                image.GetComponent<Image>().color = ColorA(image.GetComponent<Image>().color, A);
             if (image.GetComponent<SpriteRenderer>())
-                image.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, A / 255);
+                image.GetComponent<SpriteRenderer>().color = ColorA(image.GetComponent<SpriteRenderer>().color, A);
             if (image.GetComponent<Text>())
-                image.GetComponent<Text>().color = new Color(1f, 1f, 1f, A / 255);
+                image.GetComponent<Text>().color = ColorA(image.GetComponent<Text>().color, A);
             if (image.GetComponent<TextMesh>())
-                image.GetComponent<TextMesh>().color = new Color(1f, 1f, 1f, A / 255);
+                image.GetComponent<TextMesh>().color = ColorA(image.GetComponent<TextMesh>().color, A);
             await Task.Delay(delay);
         }
     }
@@ -31,13 +35,13 @@ public static class Alpha
         {
             A--;
             if (image.GetComponent<Image>())
-                image.GetComponent<Image>().color = new Color(1f, 1f, 1f, A / 255);
+                image.GetComponent<Image>().color = ColorA(image.GetComponent<Image>().color, A);
             if (image.GetComponent<SpriteRenderer>())
-                image.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, A / 255);
+                image.GetComponent<SpriteRenderer>().color = ColorA(image.GetComponent<SpriteRenderer>().color, A);
             if (image.GetComponent<Text>())
-                image.GetComponent<Text>().color = new Color(1f, 1f, 1f, A / 255);
+                image.GetComponent<Text>().color = ColorA(image.GetComponent<Text>().color, A);
             if (image.GetComponent<TextMesh>())
-                image.GetComponent<TextMesh>().color = new Color(1f, 1f, 1f, A / 255);
+                image.GetComponent<TextMesh>().color = ColorA(image.GetComponent<TextMesh>().color, A);
             await Task.Delay(delay);
         }
     }
