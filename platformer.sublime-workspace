@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"Ve",
+				"Vector2\tVector2"
+			],
+			[
 				"Col",
 				"Color\tColor"
 			],
@@ -166,10 +170,6 @@
 			[
 				"tra",
 				"transform\tTransform"
-			],
-			[
-				"Ve",
-				"Vector3\tVector3"
 			],
 			[
 				"ve",
@@ -562,6 +562,7 @@
 	],
 	"file_history":
 	[
+		"/C/Unity/platformer/Assets/Scripts/Ladder.cs",
 		"/C/Unity/platformer/Assets/Scripts/Alpha.cs",
 		"/C/Unity/platformer/Assets/Scripts/ExtensionMethods.cs",
 		"/C/Unity/platformer/Assets/Scripts/Lever.cs",
@@ -688,8 +689,7 @@
 		"/C/totalcmd/CGLPT9X.VXD",
 		"/C/totalcmd/CABRK.DLL",
 		"/C/Музыка/1 VA сборка/Mike Silver - Old Fashioned Saturday Night.wav",
-		"/C/Музыка/My Music/Joe Dassin - Поет Джо Дассен (1980)/artist.png",
-		"/C/Музыка/My Music/Joe Dassin - Поет Джо Дассен (1980)/back.jpg"
+		"/C/Музыка/My Music/Joe Dassin - Поет Джо Дассен (1980)/artist.png"
 	],
 	"find":
 	{
@@ -707,6 +707,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"other",
 			"adddForceButton",
 			"addForce",
 			"addForceButton",
