@@ -34,10 +34,10 @@ AnimationClip:
     - time: 0.33333334
       value: {fileID: 4278186640425537587, guid: 13befd5ba5d1fc84d909c8660ec37d10,
         type: 3}
-    - time: 0.38333333
+    - time: 0.4
       value: {fileID: -6860487374272789442, guid: 13befd5ba5d1fc84d909c8660ec37d10,
         type: 3}
-    - time: 0.48333332
+    - time: 0.46666667
       value: {fileID: -4830938959515655954, guid: 13befd5ba5d1fc84d909c8660ec37d10,
         type: 3}
     - time: 0.53333336
