@@ -1,4 +1,5 @@
 Temp/
 Assets/Saves/*.json
+Assets/Saves/*.meta
 platformer.sublime-project
 platformer.sublime-workspace
