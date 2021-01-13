@@ -62,6 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Animations\CutScene\CutScene1\Download.cs" />
     <Compile Include="Assets\Scripts\ActiveOnStart.cs" />
     <Compile Include="Assets\Scripts\ActiveZone.cs" />
     <Compile Include="Assets\Scripts\Alpha.cs" />
