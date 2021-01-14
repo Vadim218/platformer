@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
-using System.Threading.Tasks;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -10,18 +9,12 @@ public class PlayerController : MonoBehaviour
 	public enum ProjectAxis { onlyX = 0, xAndY = 1 };
 	public ProjectAxis projectAxis = ProjectAxis.onlyX;
 	public float speed = 150;
-	public float addForce = 7;
+	public float jumpForce = 5;
 	public bool isFacingRight = true;
-	private KeyCode leftButton;
-	private KeyCode rightButton;
-	private KeyCode upButton;
-	private KeyCode downButton;
-	private KeyCode addForceButton;
 	private Vector3 direction;
 	private float vertical;
 	private float horizontal;
 	private Rigidbody2D body;
-	private float rotationY;
 	private bool jump;
 
     public void Dead()
@@ -67,9 +60,9 @@ public class PlayerController : MonoBehaviour
 		}
 		else
 		{
-			if (Input.GetKey(addForceButton) && jump)
+			if (Input.GetKey(Settings.jump) && jump)
 			{
-				body.velocity = new Vector2(0, addForce);
+				body.velocity = new Vector2(0, jumpForce);
 			}
 		}
 	}
@@ -79,17 +72,8 @@ public class PlayerController : MonoBehaviour
 		if (projectAxis == ProjectAxis.onlyX && !UI.isPaused)
 		{
 			isFacingRight = !isFacingRight;
-			GetComponent<SpriteRenderer>().flipX = isFacingRight;
+			GetComponent<SpriteRenderer>().flipX = !isFacingRight;
 		}
-	}
-
-	async void Control(){
-		await Task.Delay(1);
-		leftButton = Settings.left;
-		rightButton = Settings.right;
-		upButton = Settings.up;
-		downButton = Settings.down;
-		addForceButton = Settings.jump;
 	}
 
     void Start()
@@ -102,25 +86,23 @@ public class PlayerController : MonoBehaviour
             body.gravityScale = 0;
             body.drag = 10;
         }
-
-        Control();
     }
 
     // Страшно:
     void Update()
 	{
-		if (Input.GetKey(upButton)) 
+		if (Input.GetKey(Settings.up)) 
 			vertical = 1;
 		else 
-			if (Input.GetKey(downButton)) 
+			if (Input.GetKey(Settings.down)) 
 				vertical = -1; 
 			else
 				vertical = 0;
 
-		if (Input.GetKey(leftButton)) 
+		if (Input.GetKey(Settings.left)) 
 			horizontal = -1;
 		else 
-			if (Input.GetKey(rightButton)) 
+			if (Input.GetKey(Settings.right)) 
 				horizontal = 1; 
 			else 
 				horizontal = 0;
@@ -129,11 +111,11 @@ public class PlayerController : MonoBehaviour
 			direction = new Vector2(horizontal, 0);
 		else
 		{
-			if (Input.GetKeyDown(addForceButton)) 
-				speed += addForce; 
+			if (Input.GetKeyDown(Settings.jump)) 
+				speed += jumpForce; 
 			else 
-				if (Input.GetKeyUp(addForceButton)) 
-					speed -= addForce;
+				if (Input.GetKeyUp(Settings.jump)) 
+					speed -= jumpForce;
 			direction = new Vector2(horizontal, vertical);
 		}
 
