@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
 	private float horizontal;
 	private Rigidbody2D body;
 	private bool jump;
+	private Animator anim;
 
     public void Dead()
     {
@@ -23,9 +24,9 @@ public class PlayerController : MonoBehaviour
         Camera.main.GetComponent<CameraMove>().Dead();
     }
 
-    void OnCollisionStay2D(Collision2D coll)
+    void OnCollisionStay2D(Collision2D col)
 	{
-		if (coll.transform.tag == "Ground")
+		if (col.transform.tag == "Ground")
 		{
 			body.drag = 0;
 			jump = true;
@@ -33,9 +34,9 @@ public class PlayerController : MonoBehaviour
 		}
 	}
 
-	void OnCollisionExit2D(Collision2D coll)
+	void OnCollisionExit2D(Collision2D col)
 	{
-		if (coll.transform.tag == "Ground")
+		if (col.transform.tag == "Ground")
 		{
 			body.drag = 0;
 			jump = false;
@@ -78,6 +79,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+    	anim = GetComponent<Animator>();
         body = GetComponent<Rigidbody2D>();
         body.fixedAngle = true;
 
@@ -106,6 +108,8 @@ public class PlayerController : MonoBehaviour
 				horizontal = 1; 
 			else 
 				horizontal = 0;
+
+		anim.SetBool("isRunning", horizontal != 0);
 
 		if (projectAxis == ProjectAxis.onlyX)
 			direction = new Vector2(horizontal, 0);
