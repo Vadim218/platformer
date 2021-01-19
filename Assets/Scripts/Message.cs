@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Message : MonoBehaviour
 {
+    [Header("Values")]
 	[SerializeField] string message;
 	[SerializeField] int delay;
 	[SerializeField] int destroyDelay;

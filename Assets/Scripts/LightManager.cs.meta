@@ -1,0 +1,30 @@
+fileFormatVersion: 2
+guid: b9129413fdf78394d9d64ae22eca5e4f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - grid: {instanceID: 0}
+  - BG: {instanceID: 0}
+  - defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - gridMaterial: {fileID: 2100000, guid: 9ea802449a3ef44468413e681267bb3e, type: 2}
+  - BGMaterial: {fileID: 2100000, guid: 098298000ea605c49ae550f1acbba648, type: 2}
+  - spikeMaterial: {instanceID: 0}
+  - leverMaterial: {instanceID: 0}
+  - leverBGMaterial: {instanceID: 0}
+  - leverSelectedMaterial: {instanceID: 0}
+  - stoneDoorMaterial: {instanceID: 0}
+  - stoneDoorUpMaterial: {instanceID: 0}
+  - stoneDoorDownMaterial: {instanceID: 0}
+  - stonePlatformMaterial: {instanceID: 0}
+  - stonePlatformStartMaterial: {instanceID: 0}
+  - stonePlatformBGMaterial: {instanceID: 0}
+  - stonePlatformEndMaterial: {instanceID: 0}
+  - stoneTurretMaterial: {instanceID: 0}
+  - stoneAutoTurretMaterial: {instanceID: 0}
+  - stoneAutoTurretBGMaterial: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
