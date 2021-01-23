@@ -30,8 +30,8 @@ public class LightManager : MonoBehaviour
     {
     	if(active)
     	{
-    		grid.GetComponent<TilemapRenderer>().material = gridMaterial;
-    		BG.GetComponent<TilemapRenderer>().material = BGMaterial;
+    		grid.GetComponentInChildren<TilemapRenderer>().material = gridMaterial;
+    		BG.GetComponentInChildren<TilemapRenderer>().material = BGMaterial;
 
     		foreach(GameObject obj in spikes)
     			obj.GetComponent<SpriteRenderer>().material = spikeMaterial;
@@ -69,8 +69,8 @@ public class LightManager : MonoBehaviour
     	}
     	else
     	{
-    		grid.GetComponent<TilemapRenderer>().material = defaultMaterial;
-    		BG.GetComponent<TilemapRenderer>().material = defaultMaterial;
+    		grid.GetComponentInChildren<TilemapRenderer>().material = defaultMaterial;
+    		BG.GetComponentInChildren<TilemapRenderer>().material = defaultMaterial;
 
     		foreach(GameObject obj in spikes)
     			obj.GetComponent<SpriteRenderer>().material = defaultMaterial;
