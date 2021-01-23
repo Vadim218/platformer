@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
@@ -11,17 +12,39 @@ public class PlayerController : MonoBehaviour
 	public float speed = 150;
 	public float jumpForce = 5;
 	public bool isFacingRight = true;
+	public GameObject[] sounds;
 	private Vector3 direction;
 	private float vertical;
 	private float horizontal;
 	private Rigidbody2D body;
 	private bool jump;
+	private bool runSound = true;
 	private Animator anim;
 
     public void Dead()
     {
         transform.position = respawn.transform.position;
         Camera.main.GetComponent<CameraMove>().Dead();
+    }
+
+    async void ManyRunSounds()
+    {
+    	if(runSound)
+    	{
+    		runSound = false;
+    		await Task.Delay(250);
+
+    		while(true)
+    		{
+    			if(horizontal == 0)
+    				break;
+
+    			Instantiate(sounds[0], transform);
+    			await Task.Delay(500);
+    		}
+
+    		runSound = true;
+    	}
     }
 
     void OnCollisionStay2D(Collision2D col)
@@ -110,6 +133,8 @@ public class PlayerController : MonoBehaviour
 				horizontal = 0;
 
 		anim.SetBool("isRunning", horizontal != 0);
+		if (horizontal != 0)
+			ManyRunSounds();
 
 		if (projectAxis == ProjectAxis.onlyX)
 			direction = new Vector2(horizontal, 0);

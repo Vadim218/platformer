@@ -241,6 +241,8 @@ MonoBehaviour:
   speed: 150
   jumpForce: 5
   isFacingRight: 1
+  sounds:
+  - {fileID: 1115702472118508204, guid: c393a7f7b1241e5408dc69950d610a04, type: 3}
 --- !u!95 &6285319641176828139
 Animator:
   serializedVersion: 3

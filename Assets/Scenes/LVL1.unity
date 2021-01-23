@@ -2442,7 +2442,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1348100527458167938, guid: 4f0a7694ecb4bbe468e662697374f18e,
         type: 3}
+      propertyPath: stoneDoors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1348100527458167938, guid: 4f0a7694ecb4bbe468e662697374f18e,
+        type: 3}
       propertyPath: StoneDoors.Array.data[0]
+      value: 
+      objectReference: {fileID: 1607740347}
+    - target: {fileID: 1348100527458167938, guid: 4f0a7694ecb4bbe468e662697374f18e,
+        type: 3}
+      propertyPath: stoneDoors.Array.data[0]
       value: 
       objectReference: {fileID: 1607740347}
     - target: {fileID: 1539358877785019987, guid: 4f0a7694ecb4bbe468e662697374f18e,

@@ -76,6 +76,7 @@
     <Compile Include="Assets\Scripts\LightManager.cs" />
     <Compile Include="Assets\Scripts\Message.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerSounds\RunSound.cs" />
     <Compile Include="Assets\Scripts\RepeatedObject.cs" />
     <Compile Include="Assets\Scripts\Settings\Settings.cs" />
     <Compile Include="Assets\Scripts\Settings\SettingsClear.cs" />
