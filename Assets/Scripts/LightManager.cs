@@ -8,7 +8,9 @@ public class LightManager : MonoBehaviour
     [Header("Objects")]
     [SerializeField] GameObject grid;
     [SerializeField] GameObject BG;
+    [SerializeField] GameObject[] boxes;
     [SerializeField] GameObject[] spikes;
+    [SerializeField] GameObject[] stairs;
     [SerializeField] GameObject[] levers;
     [SerializeField] GameObject[] stoneDoors;
     [SerializeField] GameObject[] stonePlatforms;
@@ -19,7 +21,9 @@ public class LightManager : MonoBehaviour
     [Space(10)]
     [SerializeField] Material gridMaterial;
     [SerializeField] Material BGMaterial;
+    [SerializeField] Material boxMaterial;
     [SerializeField] Material spikeMaterial;
+    [SerializeField] Material[] stairMaterial;
     [SerializeField] Material[] leverMaterial;
     [SerializeField] Material[] stoneDoorMaterial;
     [SerializeField] Material[] stonePlatformMaterial;
@@ -33,8 +37,18 @@ public class LightManager : MonoBehaviour
     		grid.GetComponentInChildren<TilemapRenderer>().material = gridMaterial;
     		BG.GetComponentInChildren<TilemapRenderer>().material = BGMaterial;
 
+    		foreach(GameObject obj in boxes)
+    			obj.GetComponent<SpriteRenderer>().material = boxMaterial;
+
     		foreach(GameObject obj in spikes)
     			obj.GetComponent<SpriteRenderer>().material = spikeMaterial;
+
+    		foreach(GameObject obj in stairs)
+    		{
+    			obj.transform.GetChild(0).GetComponent<SpriteRenderer>().material = stairMaterial[0];
+                foreach(SpriteRenderer spr in obj.transform.GetChild(1).GetComponentsInChildren<SpriteRenderer>())
+                    spr.material = stairMaterial[1];
+    		}
 
     		foreach(GameObject obj in levers){
     			obj.GetComponent<SpriteRenderer>().material = leverMaterial[0];
@@ -72,8 +86,18 @@ public class LightManager : MonoBehaviour
     		grid.GetComponentInChildren<TilemapRenderer>().material = defaultMaterial;
     		BG.GetComponentInChildren<TilemapRenderer>().material = defaultMaterial;
 
+            foreach(GameObject obj in boxes)
+                obj.GetComponent<SpriteRenderer>().material = defaultMaterial;
+
     		foreach(GameObject obj in spikes)
     			obj.GetComponent<SpriteRenderer>().material = defaultMaterial;
+
+            foreach(GameObject obj in stairs)
+            {
+                obj.transform.GetChild(0).GetComponent<SpriteRenderer>().material = defaultMaterial;
+                foreach(SpriteRenderer spr in obj.transform.GetChild(1).GetComponentsInChildren<SpriteRenderer>())
+                    spr.material = defaultMaterial;
+            }
 
     		foreach(GameObject obj in levers){
     			obj.GetComponent<SpriteRenderer>().material = defaultMaterial;
