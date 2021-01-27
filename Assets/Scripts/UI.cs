@@ -13,6 +13,7 @@ public class UI : MonoBehaviour
         if (isPaused)
         {
             Time.timeScale = 1;
+            Cursor.visible = false;
             for(int i = 0; i < image.Length; i++)
                 Alpha.Off(image[i], 1, true, false);
             isPaused = !isPaused;
@@ -20,6 +21,7 @@ public class UI : MonoBehaviour
         else
         {
             Time.timeScale = 0;
+            Cursor.visible = true;
             for (int i = 0; i < image.Length; i++)
                 Alpha.On(image[i], 1, true, true);
             isPaused = !isPaused;
@@ -28,6 +30,11 @@ public class UI : MonoBehaviour
 
     public void Exit(){
         Application.Quit();
+    }
+
+    void Start()
+    {
+        Cursor.visible = false;
     }
     
     void Update()

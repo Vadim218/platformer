@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
     		while(true)
     		{
-    			if(horizontal == 0)
+    			if(horizontal == 0 || !anim.GetBool("isLanded"))
     				break;
 
     			Instantiate(sounds[0], transform);
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
 		{
 			body.drag = 0;
 			jump = true;
-
+			anim.SetBool("isLanded", true);
 		}
 	}
 
@@ -87,6 +87,8 @@ public class PlayerController : MonoBehaviour
 			if (Input.GetKey(Settings.jump) && jump)
 			{
 				body.velocity = new Vector2(0, jumpForce);
+				anim.SetTrigger("Jump");
+				anim.SetBool("isLanded", false);
 			}
 		}
 	}

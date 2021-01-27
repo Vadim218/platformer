@@ -43,31 +43,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9129413fdf78394d9d64ae22eca5e4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cameraBG: {fileID: 0}
   grid: {fileID: 0}
   BG: {fileID: 0}
   boxes: []
+  buttons: []
+  levers: []
   spikes: []
   stairs: []
-  levers: []
+  stoneAutoTurrets: []
   stoneDoors: []
   stonePlatforms: []
   stoneTurrets: []
-  stoneAutoTurrets: []
   defaultMaterial: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  cameraBGMaterial: {fileID: 2100000, guid: 7370afc05bc361342b67bcbe6f87b5b8, type: 2}
-  gridMaterial: {fileID: 2100000, guid: 9ea802449a3ef44468413e681267bb3e, type: 2}
-  BGMaterial: {fileID: 2100000, guid: 098298000ea605c49ae550f1acbba648, type: 2}
-  boxMaterial: {fileID: 2100000, guid: d1a2accc53616354ab5ee7353fd36502, type: 2}
-  spikeMaterial: {fileID: 2100000, guid: 2641d4f88ee0a564cbec3cf91644d73c, type: 2}
-  stairMaterial:
+  matGrid: {fileID: 2100000, guid: 9ea802449a3ef44468413e681267bb3e, type: 2}
+  matBG: {fileID: 2100000, guid: 098298000ea605c49ae550f1acbba648, type: 2}
+  matBox: {fileID: 2100000, guid: d1a2accc53616354ab5ee7353fd36502, type: 2}
+  matButton:
+  - {fileID: 2100000, guid: afad99e7ef1fe464d9673a53db08de52, type: 2}
+  - {fileID: 2100000, guid: ccbaa852325f46244a8acfc3cac9ab62, type: 2}
+  matLever:
+  - {fileID: 2100000, guid: 7d5e7bc0a5e3f5d44b5cc8070d65ec8a, type: 2}
+  - {fileID: 2100000, guid: b6f055f25d29798408565fee9fc888ce, type: 2}
+  - {fileID: 2100000, guid: e915122932926aa48a5ab4259866071d, type: 2}
+  matSpike: {fileID: 2100000, guid: 2641d4f88ee0a564cbec3cf91644d73c, type: 2}
+  matStair:
   - {fileID: 2100000, guid: e41b36a33a33e884bb4fcfbf0c844939, type: 2}
   - {fileID: 2100000, guid: 3ec8edee29a12ea41b83f5f5dbf98732, type: 2}
-  leverMaterial: []
-  stoneDoorMaterial:
+  matStoneAutoTurret: []
+  matStoneDoor:
   - {fileID: 2100000, guid: cc6d990d1cc43aa42b82f3d8a92cae05, type: 2}
   - {fileID: 2100000, guid: 33f638fa4e3dcbe4cb1a12a1e6151589, type: 2}
   - {fileID: 2100000, guid: 2fa29c2fddb4a7549b0daafbb2d3f4cb, type: 2}
-  stonePlatformMaterial: []
-  stoneTurretMaterial: {fileID: 0}
-  stoneAutoTurretMaterial: []
+  matStonePlatform: []
+  matStoneTurret: {fileID: 0}

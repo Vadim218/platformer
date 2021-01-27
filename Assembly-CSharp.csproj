@@ -81,6 +81,7 @@
     <Compile Include="Assets\Scripts\Settings\Settings.cs" />
     <Compile Include="Assets\Scripts\Settings\SettingsClear.cs" />
     <Compile Include="Assets\Scripts\Settings\SettingsControl.cs" />
+    <Compile Include="Assets\Scripts\Settings\SettingsFolder.cs" />
     <Compile Include="Assets\Scripts\Settings\SettingsLanguage.cs" />
     <Compile Include="Assets\Scripts\StoneAutoTurret.cs" />
     <Compile Include="Assets\Scripts\StoneDoor.cs" />

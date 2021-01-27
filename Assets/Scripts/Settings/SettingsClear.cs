@@ -10,7 +10,7 @@ public class SettingsClear : EditorWindow
     {
         string path = Application.dataPath + "/Saves";
         if (Directory.Exists(path))
-            Directory.Delete(path);
+            Directory.Delete(path, true);
         else
             Debug.LogError("The folder does not exist.");
     }
