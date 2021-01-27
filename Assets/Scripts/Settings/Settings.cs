@@ -11,4 +11,6 @@ public static class Settings
 	public static KeyCode jump;
 	public static KeyCode dash;
 	public static KeyCode active;
+
+	public static bool light;
 }

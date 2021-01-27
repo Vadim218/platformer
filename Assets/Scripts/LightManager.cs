@@ -9,7 +9,7 @@ public class LightManager : MonoBehaviour
     [Header("Objects")]
     [SerializeField] GameObject grid;
     [SerializeField] GameObject BG;
-    [Space(5)]
+    [Space(2)]
     [SerializeField] GameObject[] boxes;
     [SerializeField] GameObject[] buttons;
     [SerializeField] GameObject[] levers;
@@ -24,7 +24,7 @@ public class LightManager : MonoBehaviour
     [Space(10)]
     [SerializeField] Material matGrid;
     [SerializeField] Material matBG;
-    [Space(5)]
+    [Space(2)]
     [SerializeField] Material   matBox;
     [SerializeField] Material[] matButton;
     [SerializeField] Material[] matLever;
@@ -37,6 +37,8 @@ public class LightManager : MonoBehaviour
 
     public void Active(bool active)
     {
+        Settings.light = active;
+        
         if(active)
         {
             grid.GetComponentInChildren<TilemapRenderer>().material = matGrid;
@@ -145,5 +147,10 @@ public class LightManager : MonoBehaviour
             foreach(GameObject obj in stoneTurrets)
                 obj.GetComponent<SpriteRenderer>().material = defaultMaterial;
         }
+    }
+
+    void Start()
+    {
+        Active(Settings.light);
     }
 }

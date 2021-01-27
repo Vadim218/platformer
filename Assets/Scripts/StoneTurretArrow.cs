@@ -6,9 +6,14 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))]
 public class StoneTurretArrow : MonoBehaviour
 {
+    [Header("Materials")]
+    [SerializeField] Material matArrow;
     Rigidbody2D rb;
 
     public void Shoot(float rotation, float shift){
+        if(Settings.light)
+            GetComponent<SpriteRenderer>().material = matArrow;
+
         transform.rotation = Quaternion.Euler(new Vector3(0, 0, rotation));
         transform.Translate(shift, 0, 0);
 

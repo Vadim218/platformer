@@ -1,9 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.IO;
 using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SettingsLanguage : MonoBehaviour
 {
@@ -21,8 +21,9 @@ public class SettingsLanguage : MonoBehaviour
         Settings.language = L.language;
     }
 
-    void Start()
+    async void Start()
     {
+        await Task.Delay(1);
         SavePath = Path.Combine(Application.dataPath + "/Saves", "Language.json");
 
         if (!File.Exists(SavePath))

@@ -5,9 +5,8 @@ using UnityEngine;
 public class ActiveZone : MonoBehaviour
 {
     [Header("Objects")]
-    //Выставить объект SelectedDefault в обе переменые
-    public GameObject selectedNow;
-    public GameObject selectedDefault;
+    [SerializeField] GameObject selectedNow;
+    [SerializeField] GameObject selectedDefault;
 
     void OnTriggerEnter2D(Collider2D col)
     {

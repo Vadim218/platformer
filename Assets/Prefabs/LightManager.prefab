@@ -75,4 +75,4 @@ MonoBehaviour:
   - {fileID: 2100000, guid: 33f638fa4e3dcbe4cb1a12a1e6151589, type: 2}
   - {fileID: 2100000, guid: 2fa29c2fddb4a7549b0daafbb2d3f4cb, type: 2}
   matStonePlatform: []
-  matStoneTurret: {fileID: 0}
+  matStoneTurret: {fileID: 2100000, guid: d49cbd3495112454894cbb0b019f101b, type: 2}

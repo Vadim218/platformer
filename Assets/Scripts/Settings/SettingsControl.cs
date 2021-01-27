@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using System.IO;
 using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class SettingsControl : MonoBehaviour
 {
@@ -83,8 +83,9 @@ public class SettingsControl : MonoBehaviour
         Settings.active = C.active;
     }
 
-    void Start()
+    async void Start()
     {
+        await Task.Delay(1);
         SavePath = Path.Combine(Application.dataPath + "/Saves", "Control.json");
 
         if (!File.Exists(SavePath))
