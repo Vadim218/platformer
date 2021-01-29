@@ -69,10 +69,16 @@ MonoBehaviour:
   matStair:
   - {fileID: 2100000, guid: e41b36a33a33e884bb4fcfbf0c844939, type: 2}
   - {fileID: 2100000, guid: 3ec8edee29a12ea41b83f5f5dbf98732, type: 2}
-  matStoneAutoTurret: []
+  matStoneAutoTurret:
+  - {fileID: 2100000, guid: c982369e331f2404da1bae232f144e33, type: 2}
+  - {fileID: 2100000, guid: 1fee473fbf199d14fa01f9a50f1f9704, type: 2}
   matStoneDoor:
   - {fileID: 2100000, guid: cc6d990d1cc43aa42b82f3d8a92cae05, type: 2}
   - {fileID: 2100000, guid: 33f638fa4e3dcbe4cb1a12a1e6151589, type: 2}
   - {fileID: 2100000, guid: 2fa29c2fddb4a7549b0daafbb2d3f4cb, type: 2}
-  matStonePlatform: []
+  matStonePlatform:
+  - {fileID: 2100000, guid: b82917a55fd0e5c4daef307dc90dce52, type: 2}
+  - {fileID: 2100000, guid: 476720a303264414ba1d1fcebde79db7, type: 2}
+  - {fileID: 2100000, guid: b5a84cc69e449b540aab1c0e9f6771a8, type: 2}
+  - {fileID: 2100000, guid: 7eb5578185603504e95b60610964d929, type: 2}
   matStoneTurret: {fileID: 2100000, guid: d49cbd3495112454894cbb0b019f101b, type: 2}

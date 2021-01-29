@@ -141,7 +141,7 @@ public class LightManager : MonoBehaviour
                 obj.transform.GetChild(1).GetComponent<SpriteRenderer>().material = defaultMaterial;
                 obj.transform.GetChild(3).GetComponent<SpriteRenderer>().material = defaultMaterial;
                 foreach(SpriteRenderer srt in obj.transform.GetChild(2).GetComponentsInChildren<SpriteRenderer>())
-                    srt.material = matStonePlatform[2];
+                    srt.material = defaultMaterial;
             }
 
             foreach(GameObject obj in stoneTurrets)

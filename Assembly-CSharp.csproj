@@ -62,7 +62,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Animations\CutScene\CutScene1\Download.cs" />
     <Compile Include="Assets\Scripts\ActiveOnStart.cs" />
     <Compile Include="Assets\Scripts\ActiveZone.cs" />
     <Compile Include="Assets\Scripts\Alpha.cs" />
@@ -78,6 +77,7 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerSounds\RunSound.cs" />
     <Compile Include="Assets\Scripts\RepeatedObject.cs" />
+    <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\Settings\Settings.cs" />
     <Compile Include="Assets\Scripts\Settings\SettingsClear.cs" />
     <Compile Include="Assets\Scripts\Settings\SettingsControl.cs" />
