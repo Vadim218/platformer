@@ -36,7 +36,7 @@ public class PlayerController : MonoBehaviour
 
     		while(true)
     		{
-    			if(horizontal == 0 || !anim.GetBool("isLanded"))
+    			if(horizontal == 0 || !anim.GetBool("isLanded") || UI.isPaused)
     				break;
 
     			Instantiate(sounds[0], transform);

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class TutorialText : MonoBehaviour
@@ -7,8 +8,9 @@ public class TutorialText : MonoBehaviour
 	[Header("Values")]
     [SerializeField] string[] message;
 
-	void Start()
+	async void Start()
     {
+        await Task.Delay(100);
         switch(Settings.language)
         {
             case "EN":
