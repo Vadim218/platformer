@@ -90,6 +90,7 @@
     <Compile Include="Assets\Scripts\StoneTurret.cs" />
     <Compile Include="Assets\Scripts\StoneTurretArrow.cs" />
     <Compile Include="Assets\Scripts\Tutorial.cs" />
+    <Compile Include="Assets\Scripts\TutorialText.cs" />
     <Compile Include="Assets\Scripts\UI.cs" />
     <None Include="Assets\Shaders\2DNormal.shader" />
     <Reference Include="Unity.Timeline.Editor">

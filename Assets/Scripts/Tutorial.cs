@@ -5,9 +5,11 @@ using UnityEngine;
 
 public class Tutorial : MonoBehaviour
 {
+    [Header("Values")]
+    [SerializeField] KeyCode[] buttons;
+    [Header("Objects")]
 	[SerializeField] GameObject[] texts;
 	[SerializeField] GameObject[] buttonImgs;
-	[SerializeField] KeyCode[] buttons;
 
 	IEnumerator Wait()
     {
