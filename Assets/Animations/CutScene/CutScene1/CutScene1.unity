@@ -721,7 +721,9 @@ GameObject:
   - component: {fileID: 1047602635}
   - component: {fileID: 1047602634}
   m_Layer: 0
-  m_Name: Settings
+  m_Name: "Settings \u0443\u0434\u0430\u043B\u0438\u0442\u044C \u043F\u043E\u0441\u043B\u0435
+    \u0434\u043E\u0431\u0430\u0432\u043B\u0435\u043D\u0438\u044F \u0433\u043B\u0430\u0432\u043D\u043E\u0433\u043E
+    \u043C\u0435\u043D\u044E"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
