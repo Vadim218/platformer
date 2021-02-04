@@ -34,5 +34,15 @@ public class SettingsClear : EditorWindow
         else
             Debug.LogError("The file does not exist.");
     }
+
+    [MenuItem("Edit/MySettings/Clear Volume")]
+    public static void ClearVolume()
+    {
+        string path = Path.Combine(Application.dataPath + "/Saves", "Volume.json");
+        if (File.Exists(path))
+            File.Delete(path);
+        else
+            Debug.LogError("The file does not exist.");
+    }
 }
 #endif

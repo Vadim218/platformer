@@ -22,17 +22,17 @@ public class SceneLoader : MonoBehaviour
     {
         if(on)
         {
-            Alpha.On(blackScreen, 1);
-            Alpha.On(progressBG, 1);
-            Alpha.On(progressBar, 1);
-            Alpha.On(progressText, 1);
+            Alpha.On(blackScreen, 1, true, true);
+            Alpha.On(progressBG, 1, true, true);
+            Alpha.On(progressBar, 1, true, true);
+            Alpha.On(progressText, 1, true, true);
         }
         else
         {
-            Alpha.Off(blackScreen, 1);
-            Alpha.Off(progressBG, 1);
-            Alpha.Off(progressBar, 1);
-            Alpha.Off(progressText, 1);
+            Alpha.Off(blackScreen, 1, true, false);
+            Alpha.Off(progressBG, 1, true, false);
+            Alpha.Off(progressBar, 1, true, false);
+            Alpha.Off(progressText, 1, true, false);
         }
     }
 
