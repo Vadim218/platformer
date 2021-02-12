@@ -9,12 +9,27 @@ using UnityEngine.UI;
 public class SettingsControl : MonoBehaviour
 {
     [Header("Objects")]
-    [SerializeField] GameObject blackScreen;
+    [SerializeField] GameObject[] buttons;
     [SerializeField] GameObject[] SCUI;
+    public static bool isWorking;
     static string SavePath;
     Control C = new Control();
     KeyCode key, lastKey;
-    Color red = new Color(1, 0, 0);
+
+    void ButtonsOnOff(bool active)
+    {
+        Color enabled = new Color(1, 1, 1, 1);
+        Color disabled = new Color(1, 1, 1, 0.5f);
+        foreach(GameObject obj in buttons)
+        {
+            obj.GetComponent<Button>().enabled = active;
+            if(active)
+                obj.GetComponent<Text>().color = enabled;
+            else
+                obj.GetComponent<Text>().color = disabled;
+
+        }
+    }
 
     void OnGUI()
     {
@@ -39,6 +54,7 @@ public class SettingsControl : MonoBehaviour
             {
                 if (key != KeyCode.Escape && key != lastKey)
                 {
+                    Color red = new Color(1, 0, 0);
                     switch (name)
                     {
                         case "up":
@@ -85,14 +101,15 @@ public class SettingsControl : MonoBehaviour
             }
             yield return null;
         }
-        Alpha.Off(blackScreen, 1, true, false);
+        ButtonsOnOff(true);
+        isWorking = false;
     }
 
     public void ChangeControl(string name)
     {
         StartCoroutine("CC", name);
-        // SCUI[0].GetComponent<Button>().Interactable = false;
-        Alpha.On(blackScreen, 1, true, true);
+        ButtonsOnOff(false);
+        isWorking = true;
     }
 
     public void Apply()

@@ -7,10 +7,10 @@ public class SettingsControlUI : MonoBehaviour
 {
     enum Control {up, down, right, left, jump, dash, active}
     [SerializeField] Control con;
-    Color blue = new Color(0, 150f / 255f, 1);
 
     public void UpdateControl()
     {
+        Color blue = new Color(0, 150f / 255f, 1);
         switch(con)
         {
             case Control.up:

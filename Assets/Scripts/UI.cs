@@ -15,34 +15,35 @@ public class UI : MonoBehaviour
 
     public void Back()
     {
-        switch(cond)
-        {
-            case Condition.playing:
-                isPaused = true;
-                Time.timeScale = 0;
-                Cursor.visible = true;
-                cond = Condition.paused;
-                Alpha.On(BG, 1, true, true);
-                foreach(GameObject obj in pauseImgs)
-                    Alpha.On(obj, 1, true, true);
-                break;
-            case Condition.paused:
-                isPaused = false;
-                Time.timeScale = 1;
-                Cursor.visible = false;
-                cond = Condition.playing;
-                Alpha.Off(BG, 1, true, true);
-                foreach(GameObject obj in pauseImgs)
-                    Alpha.Off(obj, 1, true, false);
-                break;
-            case Condition.options:
-                cond = Condition.paused;
-                foreach(GameObject obj in pauseImgs)
-                    Alpha.On(obj, 1, true, true);
-                foreach(GameObject obj in optionsImgs)
-                    Alpha.Off(obj, 1, true, false);
-                break;
-        }
+        if(!SettingsControl.isWorking)
+            switch(cond)
+            {
+                case Condition.playing:
+                    isPaused = true;
+                    Time.timeScale = 0;
+                    Cursor.visible = true;
+                    cond = Condition.paused;
+                    Alpha.On(BG, 1, true, true);
+                    foreach(GameObject obj in pauseImgs)
+                        Alpha.On(obj, 1, true, true);
+                    break;
+                case Condition.paused:
+                    isPaused = false;
+                    Time.timeScale = 1;
+                    Cursor.visible = false;
+                    cond = Condition.playing;
+                    Alpha.Off(BG, 1, true, true);
+                    foreach(GameObject obj in pauseImgs)
+                        Alpha.Off(obj, 1, true, false);
+                    break;
+                case Condition.options:
+                    cond = Condition.paused;
+                    foreach(GameObject obj in pauseImgs)
+                        Alpha.On(obj, 1, true, true);
+                    foreach(GameObject obj in optionsImgs)
+                        Alpha.Off(obj, 1, true, false);
+                    break;
+            }
     }
 
     public void ToOptions()

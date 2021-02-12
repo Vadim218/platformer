@@ -111,10 +111,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 492}
+  m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 72918
+  controlID: 64267
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -136,10 +136,10 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 947
-  m_MinSize: {x: 679, y: 492}
+  m_MinSize: {x: 677, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
-  controlID: 72919
+  controlID: 64268
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,10 +162,10 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 627
-  m_MinSize: {x: 679, y: 221}
-  m_MaxSize: {x: 12004, y: 4021}
+  m_MinSize: {x: 677, y: 221}
+  m_MaxSize: {x: 12002, y: 4021}
   vertical: 0
-  controlID: 72920
+  controlID: 64269
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -276,7 +276,7 @@ MonoBehaviour:
   m_MinSize: {x: 507, y: 271}
   m_MaxSize: {x: 14002, y: 10021}
   vertical: 0
-  controlID: 73002
+  controlID: 64186
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -449,9 +449,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: ce410000
+      m_SelectedIDs: f2300000
       m_LastClickedID: 0
-      m_ExpandedIDs: 66a5feffbaadfefffebffeff6ec2feff76c5feffeccafeffb6ccfeff82cdfeff1ecefeff8638ffffec3dffff7e3effff0844ffff1847ffffc847ffff8851ffff4252ffff1257ffffde57ffff4c5affff165bffff9a5fffff8460ffff4c66ffff0869ffffc2a2ffffb6a8ffff6aadffffd4afffffbab3ffff64b7ffff80c3ffff0ccbffffdecfffff4cd5ffffc2d8ffff82f9ffff8cf9ffff6afbffffca390000d4390000ba7000002674000022bb000032bb0000
+      m_ExpandedIDs: 1215ffff9618ffffac1cffff2620ffff3220ffff0428ffff3628ffffc028ffff762dffff5c31ffffcc63ffffca66ffffb267ffff4868ffff0269ffff886effff267affffaa7cffff6887ffffae89ffff8c92ffffc297ffff0a9effff0aa2ffffeea4ffff68a8ffff66a9ffff42aaffffe8abffff7eafffff38b7ffffe8d7ffffe8d8ffff9addffffa4deffff88e8ffffb0e8ffff5eeaffffe6edffffccf2ffff96f3ffffeef6ffff6afbffff6e49000088490000ec4d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -511,9 +511,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.21771002, y: -0.390745, z: -232.5743}
+    m_Target: {x: 0.583511, y: 0.09720941, z: -141.16698}
     speed: 2
-    m_Value: {x: 0.21771002, y: -0.390745, z: -232.5743}
+    m_Value: {x: 0.583511, y: 0.09720941, z: -141.16698}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -563,9 +563,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 24.883913
+    m_Target: 20.014698
     speed: 2
-    m_Value: 24.883913
+    m_Value: 20.014698
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -617,7 +617,7 @@ MonoBehaviour:
     height: 606
   m_ViewDataDictionary: {fileID: 0}
   m_VertSplit:
-    ID: 20400
+    ID: 23090
     splitterInitialOffset: 0
     currentActiveSplitter: -1
     realSizes: 1301000036010000
@@ -1118,7 +1118,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -81928
+  m_LastSelectedObjectID: -60332
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1508,7 +1508,7 @@ MonoBehaviour:
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 17
+  m_LastVerticalScrollValue: 720
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1709,9 +1709,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: dc3e0000
-    m_LastClickedID: 16092
-    m_ExpandedIDs: 00000000dc3e0000
+    m_SelectedIDs: c0410000
+    m_LastClickedID: 16832
+    m_ExpandedIDs: 00000000c0410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1739,7 +1739,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000dc3e0000e43e0000e83e0000
+    m_ExpandedIDs: 00000000c0410000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1856,7 +1856,7 @@ MonoBehaviour:
     editType: 0
     timeReferenceMode: 0
   m_LockTracker:
-    m_IsLocked: 1
+    m_IsLocked: 0
   m_SequenceHierarchy: {fileID: 0}
   m_HierarchySplitterPerc: 0.2
   m_SequencePath:

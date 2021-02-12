@@ -21,9 +21,9 @@ MonoBehaviour:
     width: 1920
     height: 947
   m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 55441
+  controlID: 63912
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -135,9 +135,9 @@ MonoBehaviour:
     width: 1920
     height: 947
   m_MinSize: {x: 677, y: 492}
-  m_MaxSize: {x: 14001, y: 14042}
+  m_MaxSize: {x: 14002, y: 14042}
   vertical: 1
-  controlID: 55442
+  controlID: 63913
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -163,7 +163,7 @@ MonoBehaviour:
   m_MinSize: {x: 677, y: 221}
   m_MaxSize: {x: 12002, y: 4021}
   vertical: 0
-  controlID: 55408
+  controlID: 63914
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -919,7 +919,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -60280
+  m_LastSelectedObjectID: -60332
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1337,8 +1337,8 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastInspectedObjectInstanceID: 12530
+  m_LastVerticalScrollValue: 720
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1510,10 +1510,10 @@ MonoBehaviour:
     y: 627
     width: 1920
     height: 320
-  m_MinSize: {x: 506, y: 271}
-  m_MaxSize: {x: 14001, y: 10021}
+  m_MinSize: {x: 507, y: 271}
+  m_MaxSize: {x: 14002, y: 10021}
   vertical: 0
-  controlID: 55443
+  controlID: 63906
 --- !u!114 &19
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1647,9 +1647,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: f2300000
+    m_LastClickedInstanceID: 12530
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c62300003839000070390000783900003e390000023c0000463a00000000000078540000c05a000034510000a6410000708a00000a44000044440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1807,5 +1807,5 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_PreviewWindow: {fileID: 0}
-  m_LastInspectedObjectInstanceID: -1
+  m_LastInspectedObjectInstanceID: 12530
   m_LastVerticalScrollValue: 0

@@ -66,7 +66,6 @@
     <Compile Include="Assets\Scripts\ActiveZone.cs" />
     <Compile Include="Assets\Scripts\Alpha.cs" />
     <Compile Include="Assets\Scripts\Arrows.cs" />
-    <Compile Include="Assets\Scripts\Button.cs" />
     <Compile Include="Assets\Scripts\CameraMove.cs" />
     <Compile Include="Assets\Scripts\Dead.cs" />
     <Compile Include="Assets\Scripts\ExtensionMethods.cs" />
@@ -76,6 +75,7 @@
     <Compile Include="Assets\Scripts\Message.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerSounds\RunSound.cs" />
+    <Compile Include="Assets\Scripts\RedButton.cs" />
     <Compile Include="Assets\Scripts\RepeatedObject.cs" />
     <Compile Include="Assets\Scripts\SceneLoader.cs" />
     <Compile Include="Assets\Scripts\Settings\Settings.cs" />
