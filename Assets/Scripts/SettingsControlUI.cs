@@ -7,31 +7,39 @@ public class SettingsControlUI : MonoBehaviour
 {
     enum Control {up, down, right, left, jump, dash, active}
     [SerializeField] Control con;
+    Color blue = new Color(0, 150f / 255f, 1);
 
     public void UpdateControl()
     {
         switch(con)
         {
             case Control.up:
-                GetComponent<Text>().text = $"<color=#0096FF>[{Settings.up.ToString()}]</color>";
+                GetComponent<Text>().text = $"[{Settings.up.ToString()}]";
+                GetComponent<Text>().color = blue;
                 break;
             case Control.down:
-                GetComponent<Text>().text = $"<color=#0096FF>[{Settings.down.ToString()}]</color>";
+                GetComponent<Text>().text = $"[{Settings.down.ToString()}]";
+                GetComponent<Text>().color = blue;
                 break;
             case Control.right:
-                GetComponent<Text>().text = $"<color=#0096FF>[{Settings.right.ToString()}]</color>";
+                GetComponent<Text>().text = $"[{Settings.right.ToString()}]";
+                GetComponent<Text>().color = blue;
                 break;
             case Control.left:
-                GetComponent<Text>().text = $"<color=#0096FF>[{Settings.left.ToString()}]</color>";
+                GetComponent<Text>().text = $"[{Settings.left.ToString()}]";
+                GetComponent<Text>().color = blue;
                 break;
             case Control.jump:
-                GetComponent<Text>().text = $"<color=#0096FF>[{Settings.jump.ToString()}]</color>";
+                GetComponent<Text>().text = $"[{Settings.jump.ToString()}]";
+                GetComponent<Text>().color = blue;
                 break;
             case Control.dash:
-                GetComponent<Text>().text = $"<color=#0096FF>[{Settings.dash.ToString()}]</color>";
+                GetComponent<Text>().text = $"[{Settings.dash.ToString()}]";
+                GetComponent<Text>().color = blue;
                 break;
             case Control.active:
-                GetComponent<Text>().text = $"<color=#0096FF>[{Settings.active.ToString()}]</color>";
+                GetComponent<Text>().text = $"[{Settings.active.ToString()}]";
+                GetComponent<Text>().color = blue;
                 break;
         }
     }

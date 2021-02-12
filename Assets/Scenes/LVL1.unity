@@ -1531,7 +1531,7 @@ PrefabInstance:
     - target: {fileID: 7819925377206484133, guid: dd4124ef70808f84aac0ceba0ddb1c85,
         type: 3}
       propertyPath: m_RootOrder
-      value: 28
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 7819925377206484133, guid: dd4124ef70808f84aac0ceba0ddb1c85,
         type: 3}
@@ -5008,6 +5008,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 965964711245433631, guid: e2bb3bd690c88c0429507110667a13a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1572101832008717951, guid: e2bb3bd690c88c0429507110667a13a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 2026371199135973493, guid: e2bb3bd690c88c0429507110667a13a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2739334940185440541, guid: e2bb3bd690c88c0429507110667a13a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 29
+      objectReference: {fileID: 0}
     - target: {fileID: 2849523197876487889, guid: e2bb3bd690c88c0429507110667a13a1,
         type: 3}
       propertyPath: m_Name
@@ -5123,6 +5143,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3946229446487147752, guid: e2bb3bd690c88c0429507110667a13a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 38
+      objectReference: {fileID: 0}
+    - target: {fileID: 4287549269764913878, guid: e2bb3bd690c88c0429507110667a13a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 37
+      objectReference: {fileID: 0}
     - target: {fileID: 4504750268806139048, guid: e2bb3bd690c88c0429507110667a13a1,
         type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.size
@@ -5152,6 +5182,36 @@ PrefabInstance:
         type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5165254224067836432, guid: e2bb3bd690c88c0429507110667a13a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 28
+      objectReference: {fileID: 0}
+    - target: {fileID: 6010732694210023689, guid: e2bb3bd690c88c0429507110667a13a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 34
+      objectReference: {fileID: 0}
+    - target: {fileID: 6410961838787197701, guid: e2bb3bd690c88c0429507110667a13a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 6831125285681330389, guid: e2bb3bd690c88c0429507110667a13a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7131489084540500350, guid: e2bb3bd690c88c0429507110667a13a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 8839053405552349124, guid: e2bb3bd690c88c0429507110667a13a1,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e2bb3bd690c88c0429507110667a13a1, type: 3}

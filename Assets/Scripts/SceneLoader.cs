@@ -29,10 +29,11 @@ public class SceneLoader : MonoBehaviour
         }
         else
         {
+            bool isMainMenu = SceneManager.GetActiveScene().name == "MainMenu";
             Alpha.Off(blackScreen, 1, true, false);
-            Alpha.Off(progressBG, 1, true, false);
-            Alpha.Off(progressBar, 1, true, false);
-            Alpha.Off(progressText, 1, true, false);
+            Alpha.Off(progressBG, 1, !isMainMenu, false);
+            Alpha.Off(progressBar, 1, !isMainMenu, false);
+            Alpha.Off(progressText, 1, !isMainMenu, false);
         }
     }
 
@@ -76,6 +77,8 @@ public class SceneLoader : MonoBehaviour
 
     void Start()
     {
+        Time.timeScale = 1;
+        UI.isPaused = false;
         blackScreen = loadScreen.gameObject;
         progressBG = loadScreen.GetChild(0).gameObject;
         progressBar = loadScreen.GetChild(1).gameObject;
