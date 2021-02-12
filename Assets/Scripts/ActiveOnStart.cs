@@ -23,7 +23,7 @@ public class ActiveOnStart : MonoBehaviour
                 foreach(GameObject obj in stoneTurrets)
                     obj.GetComponent<StoneTurret>().Active(true);
                 foreach(GameObject obj in stoneAutoTurrets)
-                    obj.GetComponent<StoneAutoTurret>().Active(true);
+                    obj.GetComponentInChildren<StoneAutoTurret>().Active(true);
                 break;
             }
             yield return null;

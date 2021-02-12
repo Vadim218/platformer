@@ -14,6 +14,7 @@ public class StoneAutoTurret : MonoBehaviour
     [SerializeField] GameObject arrow;
     float shift = -1.2f;
 	float velocity;
+    bool isShoot;
 
     IEnumerator Look(Transform aim){
     	while(true){
@@ -27,16 +28,22 @@ public class StoneAutoTurret : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D col){
     	if(col.tag == "Player")
+        {
     		StartCoroutine("Look", col.transform);
+            isShoot = true;
+        }
     }
 
     void OnTriggerExit2D(Collider2D col){
     	if(col.tag == "Player")
+        {
     		StopCoroutine("Look");
+            isShoot = false;
+        }
     }
 
     void Shoot(){
-        if(isActive){
+        if(isActive && isShoot){
             GameObject arr = Instantiate(arrow, transform);
             arr.GetComponent<StoneTurretArrow>().Shoot(lookAt + 180, shift);
         }

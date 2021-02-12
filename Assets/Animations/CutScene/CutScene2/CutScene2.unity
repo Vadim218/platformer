@@ -345,7 +345,7 @@ MonoBehaviour:
   delay: 80
   destroyDelay: 500
   activeOnStart: 1
-  startDelay: 17300
+  startDelay: 17200
 --- !u!102 &328555718
 TextMesh:
   serializedVersion: 3
@@ -551,7 +551,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b32426960d902ae42b6401ba173bcaeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: LVL1
+  sceneName: LVL2
   loadScreen: {fileID: 701622328}
   activeByTrigger: 1
 --- !u!61 &537553133

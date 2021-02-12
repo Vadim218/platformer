@@ -45,12 +45,12 @@ public class StonePlatform : MonoBehaviour
                     toMove.transform.Translate(-speed * Time.deltaTime, 0, 0);
 
             if (platform.transform.localPosition.x > lenght){
-                onStart = !onStart;
+                onStart = false;
                 if (!isLoop)
                     isActive = !isActive;
             }
             if (platform.transform.localPosition.x < 0)
-                onStart = !onStart;
+                onStart = true;
         }
     }
 }

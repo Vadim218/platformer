@@ -4,22 +4,28 @@ using System.Threading.Tasks;
 using System.IO;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SettingsControl : MonoBehaviour
 {
+    [Header("Objects")]
+    [SerializeField] GameObject blackScreen;
+    [SerializeField] GameObject[] SCUI;
     static string SavePath;
     Control C = new Control();
     KeyCode key;
 
     void OnGUI()
     {
-        if (Input.GetKey(KeyCode.LeftShift)) { key = KeyCode.LeftShift; }
+        if (Input.GetKey(KeyCode.LeftShift))
+            key = KeyCode.LeftShift;
         else
         {
             if (Input.anyKey)
             {
                 Event e = Event.current;
-                if (e.isKey && e.keyCode != KeyCode.None) { key = e.keyCode; }
+                if (e.isKey && e.keyCode != KeyCode.None)
+                    key = e.keyCode;
             }
         }
     }
@@ -32,29 +38,35 @@ public class SettingsControl : MonoBehaviour
             {
                 if (key != KeyCode.Escape)
                 {
-                    yield return new WaitForSeconds(0.01f);
                     switch (name)
                     {
                         case "up":
                             C.up = key;
+                            SCUI[0].GetComponent<Text>().text = $"<color=#F00>[{key}]</color>";
                             break;
                         case "down":
                             C.down = key;
+                            SCUI[1].GetComponent<Text>().text = $"<color=#F00>[{key}]</color>";
                             break;
                         case "right":
                             C.right = key;
+                            SCUI[2].GetComponent<Text>().text = $"<color=#F00>[{key}]</color>";
                             break;
                         case "left":
                             C.left = key;
+                            SCUI[3].GetComponent<Text>().text = $"<color=#F00>[{key}]</color>";
                             break;
                         case "jump":
                             C.jump = key;
+                            SCUI[4].GetComponent<Text>().text = $"<color=#F00>[{key}]</color>";
                             break;
                         case "dash":
                             C.dash = key;
+                            SCUI[5].GetComponent<Text>().text = $"<color=#F00>[{key}]</color>";
                             break;
                         case "active":
                             C.active = key;
+                            SCUI[6].GetComponent<Text>().text = $"<color=#F00>[{key}]</color>";
                             break;
                     }
                     break;
@@ -64,11 +76,13 @@ public class SettingsControl : MonoBehaviour
             }
             yield return null;
         }
+        Alpha.Off(blackScreen, 1, true, false);
     }
 
     public void ChangeControl(string name)
     {
         StartCoroutine("CC", name);
+        Alpha.On(blackScreen, 1, true, true);
     }
 
     public void Apply()

@@ -84,6 +84,7 @@
     <Compile Include="Assets\Scripts\Settings\SettingsFolder.cs" />
     <Compile Include="Assets\Scripts\Settings\SettingsLanguage.cs" />
     <Compile Include="Assets\Scripts\Settings\SettingsVolume.cs" />
+    <Compile Include="Assets\Scripts\SettingsControlUI.cs" />
     <Compile Include="Assets\Scripts\StoneAutoTurret.cs" />
     <Compile Include="Assets\Scripts\StoneDoor.cs" />
     <Compile Include="Assets\Scripts\StonePlatform.cs" />
@@ -93,6 +94,7 @@
     <Compile Include="Assets\Scripts\Tutorial.cs" />
     <Compile Include="Assets\Scripts\TutorialText.cs" />
     <Compile Include="Assets\Scripts\UI.cs" />
+    <Compile Include="Assets\Scripts\UIText.cs" />
     <None Include="Assets\Shaders\2DNormal.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Unity/platformer/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
