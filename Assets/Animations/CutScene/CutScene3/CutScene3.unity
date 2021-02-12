@@ -842,7 +842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b32426960d902ae42b6401ba173bcaeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: CutScene1
+  sceneName: LVL3
   loadScreen: {fileID: 1098018945}
   activeByTrigger: 1
 --- !u!61 &865523303

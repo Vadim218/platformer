@@ -26,8 +26,7 @@ public class StoneTurretArrow : MonoBehaviour
     async void OnTriggerEnter2D(Collider2D col){
         if (!col.GetComponent<StoneTurret>() &&
             !col.GetComponent<StoneAutoTurret>() &&
-            !col.GetComponent<ActiveZone>() &&
-            !col.GetComponent<StonePlatformTrigger>()){
+            !col.GetComponent<ActiveZone>()){
             GetComponent<Collider2D>().enabled = false;
             Alpha.Off(gameObject, 1, true);
             await Task.Delay(25);

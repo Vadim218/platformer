@@ -228,4 +228,5 @@ MonoBehaviour:
   isLoop: 0
   delay: 1000
   lookAt: 0
+  rotateSpeed: 0.8
   arrow: {fileID: 6549738174970406921, guid: a4c1455e0ee2dc84091d8c24254d3805, type: 3}

@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Animations/CutScene/CutScene3/CutScene3.unity
     guid: c76fa3b083dea1d448dd76e44e05c2d9
+  - enabled: 1
+    path: Assets/Scenes/LVL3.unity
+    guid: a1d04c79d75b445438df1aeeee1fa97d
   m_configObjects: {}

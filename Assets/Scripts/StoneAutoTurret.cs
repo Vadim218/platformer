@@ -10,6 +10,7 @@ public class StoneAutoTurret : MonoBehaviour
 	[SerializeField] bool isLoop;
     [SerializeField] [Min(1)] int delay = 1;
     [SerializeField] float lookAt;
+    [SerializeField] float rotateSpeed;
     [Header("Objects")]
     [SerializeField] GameObject arrow;
     float shift = -1.2f;
@@ -20,7 +21,7 @@ public class StoneAutoTurret : MonoBehaviour
     	while(true){
     		Vector3 aimDir = (aim.position - transform.position).normalized;
     		float angle = Mathf.Atan2(aimDir.y, aimDir.x) * Mathf.Rad2Deg;
-    		lookAt = Mathf.SmoothDamp(lookAt, angle, ref velocity, 0.8f);
+    		lookAt = Mathf.SmoothDamp(lookAt, angle, ref velocity, rotateSpeed);
     		transform.eulerAngles = new Vector3(0, 0, lookAt);
     		yield return null;
     	}
